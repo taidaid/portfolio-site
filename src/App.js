@@ -23,20 +23,22 @@ class App extends React.Component {
       // ) : (
       <Router>
         <div className="App">
-          <nav>
-            <img src={logo} className="App-logo" alt="logo" />
-            <Link to="/about">about</Link>
-            <Link to="/portfolio">portfolio</Link>
-          </nav>
+          <div className="navbar">
+            <Link to="/">
+              <img src={logo} className="App-logo" alt="logo" />
+            </Link>
+            <Link className="textLink" to="/about">
+              about
+            </Link>
+            <Link className="textLink" to="/portfolio">
+              portfolio
+            </Link>
+          </div>
           <div>
             <Switch>
               <Route path="/about" component={About} />
               <Route path="/portfolio" component={Portfolio} />
-              <Route
-                exact
-                path="/"
-                render={({ location }) => <Home location={location} />}
-              />
+              <Route exact path="/" component={Home} />
             </Switch>
           </div>
         </div>

@@ -1,4 +1,5 @@
-body {
+.App {
+  text-align: center;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -7,10 +8,6 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: lightgrey;
-}
-
-.App {
-  text-align: center;
 }
 
 .App-logo {
@@ -32,7 +29,7 @@ body {
   color: lightgrey;
 }
 
-nav {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -40,7 +37,8 @@ nav {
   display: flex;
   align-items: center;
 }
-nav a {
+
+.textLink {
   padding-left: 20px;
 }
 
