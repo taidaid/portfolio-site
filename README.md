@@ -1,3 +1,8 @@
+# TODO
+
+- add spinning logo animation for Loading screen
+- when componentWillMount, animate the logo sliding from center to top left and shrinking from 400px to 200px
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
