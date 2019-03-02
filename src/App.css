@@ -47,6 +47,10 @@ a {
   color: white;
 }
 
+.About {
+  padding-top: 10vh;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
