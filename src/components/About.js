@@ -3,10 +3,12 @@ import React from "react";
 const About = () => {
   return (
     <div className="About">
-      您好, 我是翁博展.
-      <br />
-      My name is Bryan Windsor.
-      <div>
+      <div className="about-header">
+        <h1>您好, 我是翁博展.</h1>
+        <h1>My name is Bryan Windsor.</h1>
+      </div>
+
+      <div className="about-block">
         <h3>Software Developer</h3>
         <p>
           I first became interested in IT when I was running a Call of Duty clan
@@ -14,7 +16,7 @@ const About = () => {
           the server and website which introduced me to networking and HTML/CSS
         </p>
       </div>
-      <div>
+      <div className="about-block">
         <h3>Polyglot</h3>
         <p>
           I first began learning languages when I was 12 years old and required
@@ -34,31 +36,47 @@ const About = () => {
           Chinese, French, Dutch, German, and Spanish.
         </p>
       </div>
-      <div>
+      <div className="about-block">
         <h3>Adventurer</h3>
-        <p>
-          I learned to ski at 6 years old and never looked back. I have been
-          traveling, skiing, snowboarding, kitesurfing, wakeboarding, SCUBA
-          diving, cliff diving, free climbing, hiking, racing, exploring, and
-          loving every minute of it.
-        </p>
-        <ul>
-          <div>
-            <h5>Diver</h5>
-            <p>GA Aquarium, St. Thomas, Thailand, Fiji</p>
-          </div>
-          <div>
-            <h5>Skier</h5>
-            <p>Vale, Park City</p>
-          </div>
-          <div>
-            <h5>Climber</h5>
-            <p>Bouldering Halls</p>
-            <p>Waterfalls</p>
-          </div>
-        </ul>
+        <div>
+          <p>
+            I learned to ski at 6 years old and never looked back. I have been
+            traveling, skiing, snowboarding, kitesurfing, wakeboarding, SCUBA
+            diving, cliff diving, free climbing, hiking, racing, exploring, and
+            loving every minute of it.
+          </p>
+          <table>
+            <tr>
+              <th>Countries Explored</th>
+              <td>
+                <p>
+                  The Netherlands, Austria, Vietnam, Taiwan, China, Thailand,
+                  Malaysia, Singapore, USA and many more...
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th>Places Dived</th>
+              <td>
+                <p>GA Aquarium, Thailand, St. Thomas, Fiji</p>
+              </td>
+            </tr>
+            <tr>
+              <th>Mountains Skiied</th>
+              <td>
+                <p>Vale, Park City, Winterplace</p>
+              </td>
+            </tr>
+            <tr>
+              <th>Walls Climbed</th>
+              <td>
+                <p>Taiwan, Vietnam, The Netherlands</p>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
-      <div>
+      <div className="about-block">
         <h3>Educator</h3>
         <p>
           During my time in Taiwan, I became an English teacher for
@@ -66,7 +84,7 @@ const About = () => {
           and efficiently explain complex concepts.
         </p>
       </div>
-      <div>
+      <div className="about-block">
         <h3>Healthcare IT Operations Manager</h3>
         <p>
           After graduation from university, I had the opportunity to work as an

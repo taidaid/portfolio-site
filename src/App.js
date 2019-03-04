@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
-import Loading from "./components/Loading";
+
 import logo from "./assets/logo.png";
 import "./App.css";
 
@@ -13,14 +13,8 @@ class App extends React.Component {
     this.state = { isLoading: true };
   }
 
-  // componentDidMount() {
-  //   setTimeout(() => this.setState({ isLoading: false }), 2000);
-  // }
   render() {
     return (
-      // return this.state.isLoading ? (
-      //   <Loading />
-      // ) : (
       <Router>
         <div className="App">
           <div className="navbar">
