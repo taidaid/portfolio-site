@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+
   font-size: calc(10px + 2vmin);
 }
 
@@ -18,13 +18,17 @@
   padding-left: 20px;
 }
 
+.textLink:active {
+  color: lightblue;
+}
+
 a {
   text-decoration: none;
   color: white;
 }
 
 .navbar {
-  background-color: #282c34;
+  background-color: rgb(40, 44, 52, 0.97);
   width: 100vw;
   position: fixed;
   top: 0;
@@ -34,16 +38,21 @@ a {
   align-items: center;
 }
 
+.Home {
+  padding-top: 120px;
+  line-height: 1.6;
+  background-color: #282c34;
+  color: lightgrey;
+}
+
+.Home h1 {
+  width: 70vw;
+}
+
 .About {
   padding-top: 120px;
   background-color: rgb(243, 243, 243);
   color: #282c34;
-}
-
-.Home {
-  padding-top: 100px;
-  background-color: #282c34;
-  color: lightgrey;
 }
 
 .about-header {
@@ -60,7 +69,15 @@ a {
   background-color: #282c34;
   color: rgb(243, 243, 243);
   float: left;
+  border-radius: 5px 10px;
+  border: 3px solid #282c34;
 }
+
+.about-block:nth-child(even) {
+  background-color: rgb(243, 243, 243);
+  color: #282c34;
+}
+
 .about-block p {
   padding: 0 5vw 0 5vw;
   font-size: calc(8px + 2vmin);

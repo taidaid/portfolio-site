@@ -28,13 +28,12 @@ class App extends React.Component {
               portfolio
             </Link>
           </div>
-          <div>
-            <Switch>
-              <Route path="/about" component={About} />
-              <Route path="/portfolio" component={Portfolio} />
-              <Route exact path="/" component={Home} />
-            </Switch>
-          </div>
+
+          <Switch>
+            <Route path="/about" component={About} />
+            <Route path="/portfolio" component={Portfolio} />
+            <Route exact path="/" component={Home} />
+          </Switch>
         </div>
       </Router>
     );
