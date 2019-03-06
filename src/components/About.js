@@ -1,6 +1,7 @@
 import React from "react";
+import AnimatedWrapper from "../AnimatedWrapper";
 
-const About = () => {
+const AboutComponent = () => {
   return (
     <div className="About">
       <div className="about-header">
@@ -9,7 +10,14 @@ const About = () => {
       </div>
 
       <div className="about-block">
-        <h3>Web Developer</h3>
+        <div>
+          <h3>
+            Web Developer
+            <span role="img" aria-label="Programmer emoji">
+              👨‍💻
+            </span>
+          </h3>
+        </div>
         <div>
           <p>
             I was introduced to programming in Java over 10 years ago as part of
@@ -32,7 +40,20 @@ const About = () => {
         </div>
       </div>
       <div className="about-block">
-        <h3>Hobbies</h3>
+        <div>
+          <h3>
+            Hobbies
+            <div>
+              <span role="img" aria-label="Books emoji">
+                📚
+              </span>
+              <span role="img" aria-label="Skiing emoji">
+                🎿
+              </span>
+            </div>
+          </h3>
+        </div>
+
         <div>
           <p>
             I have always had a curious mind and a hands-on attitude. When I was
@@ -67,7 +88,14 @@ const About = () => {
         </div>
       </div>
       <div className="about-block">
-        <h3>Educator</h3>
+        <div>
+          <h3>
+            Educator
+            <span role="img" aria-label="Educator emoji">
+              👨‍🏫
+            </span>
+          </h3>
+        </div>
         <div>
           <p>
             During my time in Taiwan, I became an English teacher for
@@ -78,7 +106,14 @@ const About = () => {
         </div>
       </div>
       <div className="about-block">
-        <h3>Adventurer</h3>
+        <div>
+          <h3>
+            Adventurer
+            <span role="img" aria-label="Globe emoji">
+              🌏
+            </span>
+          </h3>
+        </div>
         <div>
           <p>
             I learned to ski at 6 years old and never looked back. I have been
@@ -106,7 +141,7 @@ const About = () => {
               <tr>
                 <th>Mountains Skiied</th>
                 <td>
-                  <p>Vale, Park City, Winterplace</p>
+                  <p>Vale, Park City, Winterplace, Stubai Glacier</p>
                 </td>
               </tr>
               <tr>
@@ -121,7 +156,15 @@ const About = () => {
       </div>
 
       <div className="about-block">
-        <h3>Healthcare IT Operations Manager</h3>
+        <div>
+          <h3>
+            IT&nbsp;
+            <span role="img" aria-label="Globe emoji">
+              🕴️
+            </span>{" "}
+            Operations Manager
+          </h3>
+        </div>
         <div>
           <p>
             After graduation from university, I had the opportunity to lead an
@@ -143,4 +186,5 @@ const About = () => {
   );
 };
 
+const About = AnimatedWrapper(AboutComponent);
 export default About;

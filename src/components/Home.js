@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import TextLoop from "react-text-loop";
+import AnimatedWrapper from "../AnimatedWrapper";
 
-const Home = () => {
+const HomeComponent = () => {
   return (
     <Router>
       <div className="Home">
@@ -26,4 +27,5 @@ const Home = () => {
   );
 };
 
+const Home = AnimatedWrapper(HomeComponent);
 export default Home;

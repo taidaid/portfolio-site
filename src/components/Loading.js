@@ -1,10 +1,9 @@
 import React from "react";
-import logo from "../assets/logo.png";
 
 const Loading = () => {
   return (
-    <div>
-      <img src={logo} className="App-logo" alt="logo" />
+    <div className="Loading">
+      <img src="https://i.imgur.com/XksN5K0.png" id="loading" alt="logo" />
     </div>
   );
 };

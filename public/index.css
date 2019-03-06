@@ -1,5 +1,5 @@
 body {
-  background-color: #282c34;
+  background-color: rgb(37, 41, 48);
   min-height: 100vh;
   color: lightgrey;
 }
@@ -13,7 +13,7 @@ body {
   display: flex;
   align-items: center;
 
-  animation: loading infinite 40s linear;
+  animation: loading infinite 30s linear;
 
   pointer-events: none;
   width: 10vw;
