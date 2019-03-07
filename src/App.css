@@ -1,3 +1,12 @@
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
 .App {
   min-height: 100vh;
   display: flex;
@@ -30,6 +39,7 @@ a {
 .navbar {
   background-color: rgb(40, 44, 52, 0.97);
   width: 100vw;
+  height: 15vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -41,6 +51,7 @@ a {
 .Home {
   padding-top: 120px;
   line-height: 1.6;
+  height: 85vh;
   background-color: #282c34;
   color: lightgrey;
 }
