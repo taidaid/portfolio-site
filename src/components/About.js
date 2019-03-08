@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    const body = document.querySelector("body");
+
+    if (body) {
+      body.style.overflowY = "visible";
+    }
+
+    return () => {
+      if (body) {
+        body.style.overflowY = "hidden";
+      }
+    };
+  });
+
   return (
     <div className="About">
       <div className="about-header">
