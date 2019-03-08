@@ -17,7 +17,6 @@
 }
 
 .App-logo {
-  /* animation: App-logo-spin infinite 40s linear; */
   pointer-events: none;
   width: auto;
   height: 100px;
@@ -37,7 +36,7 @@ a {
 }
 
 .navbar {
-  background-color: rgb(40, 44, 52, 0.97);
+  background-color: rgb(40, 44, 52);
   width: 100vw;
   height: 15vh;
   position: fixed;
@@ -49,10 +48,11 @@ a {
 }
 
 .Home {
+  overflow-y: hidden;
   padding-top: 120px;
   line-height: 1.6;
   height: 85vh;
-  background-color: #282c34;
+  background-color: rgb(40, 44, 52);
   color: lightgrey;
 }
 
@@ -61,9 +61,14 @@ a {
 }
 
 .About {
-  padding-top: 120px;
+  overflow-y: scroll;
+  padding-top: 15vh;
   background-color: rgb(243, 243, 243);
   color: #282c34;
+}
+
+.Portfolio {
+  padding-top: 15vh;
 }
 
 .about-header {
@@ -77,16 +82,16 @@ a {
   align-items: center;
   margin: 5vh 10vw 5vh 10vw;
   padding: 5vh 3vw 5vh 3vw;
-  background-color: #282c34;
+  background-color: rgb(40, 44, 52);
   color: rgb(243, 243, 243);
   float: left;
   border-radius: 5px 10px;
-  border: 3px solid #282c34;
+  border: 3px solid rgb(40, 44, 52);
 }
 
 .about-block:nth-child(even) {
   background-color: rgb(243, 243, 243);
-  color: #282c34;
+  color: rgb(40, 44, 52);
 }
 
 .about-block p {
