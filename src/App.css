@@ -120,11 +120,16 @@ a {
 
 .Portfolio {
   padding-top: 15vh;
+  display: flex;
 }
 
 .Portfolio img {
   width: 25vw;
   height: auto;
+}
+
+.Portfolio .project {
+  margin: 20px 5vw 0 5vw;
 }
 
 /* @keyframes App-logo-spin {
