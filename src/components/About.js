@@ -51,6 +51,21 @@ const About = () => {
         </div>
       </div>
       <div className="about-block">
+        <h3>Educator</h3>
+        <div>
+          <p>
+            {/* During my time in Taiwan, I became an English teacher for
+            Chinese-speaking students. Through my Mandarin, I am able to easily
+            and efficiently explain complex concepts. This skill has earned me
+            hundreds of rave reviews from students and parents. */}
+            Est provident perspiciatis non voluptate molestias omnis laudantium
+            nesciunt est. Saepe laudantium eum quos excepturi. Asperiores
+            numquam doloribus qui qui consequatur ratione. Nihil assumenda eaque
+            nemo officia.
+          </p>
+        </div>
+      </div>
+      <div className="about-block">
         <h3>Hobbies</h3>
         <div>
           <p>
@@ -98,21 +113,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="about-block">
-        <h3>Educator</h3>
-        <div>
-          <p>
-            {/* During my time in Taiwan, I became an English teacher for
-            Chinese-speaking students. Through my Mandarin, I am able to easily
-            and efficiently explain complex concepts. This skill has earned me
-            hundreds of rave reviews from students and parents. */}
-            Est provident perspiciatis non voluptate molestias omnis laudantium
-            nesciunt est. Saepe laudantium eum quos excepturi. Asperiores
-            numquam doloribus qui qui consequatur ratione. Nihil assumenda eaque
-            nemo officia.
-          </p>
-        </div>
-      </div>
+
       <div className="about-block">
         <h3>Adventurer</h3>
         <div>
