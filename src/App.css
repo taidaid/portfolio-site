@@ -7,130 +7,140 @@
   transition: opacity 250ms ease-in;
 }
 
-.App {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  font-size: calc(10px + 2vmin);
-}
-
-.App-logo {
-  pointer-events: none;
-  width: auto;
-  height: 100px;
-}
-
-.textLink {
-  padding-left: 20px;
-}
-
-.textLink:active {
-  color: lightblue;
-}
-
 a {
   text-decoration: none;
   color: white;
 }
 
-.navbar {
-  background-color: rgb(40, 44, 52);
-  width: 100vw;
-  height: 15vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  flex-flow: row;
-  display: flex;
-  align-items: center;
-}
+/* .App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    font-size: calc(10px + 2vmin);
+  }
 
-.Home {
-  overflow-y: hidden;
-  padding-top: 120px;
-  line-height: 1.6;
-  height: 85vh;
-  background-color: rgb(40, 44, 52);
-  color: lightgrey;
-}
+  .App-logo {
+    pointer-events: none;
+    width: auto;
+    height: 100px;
+  }
 
-.Home h1 {
-  width: 70vw;
-}
+  .textLink {
+    padding-left: 20px;
+  }
 
-.About {
-  overflow-y: scroll;
-  padding-top: 15vh;
-  background-color: rgb(243, 243, 243);
-  color: #282c34;
-}
+  .textLink:active {
+    color: lightblue;
+  }
 
-.about-header {
-  margin: 0 10vw 0 10vw;
-  padding: 0 5vw 0 5vw;
-}
 
-.about-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5vh 10vw 5vh 10vw;
-  padding: 5vh 3vw 5vh 3vw;
-  background-color: rgb(40, 44, 52);
-  color: rgb(243, 243, 243);
-  float: left;
-  border-radius: 5px 10px;
-  border: 3px solid rgb(40, 44, 52);
-}
 
-.about-block:nth-child(even) {
-  background-color: rgb(243, 243, 243);
-  color: rgb(40, 44, 52);
-}
+  .navbar {
+    background-color: rgb(40, 44, 52);
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-flow: row;
+    display: flex;
+    align-items: center;
+  }
 
-.about-block p {
-  padding: 0 5vw 0 5vw;
-  font-size: calc(8px + 2vmin);
-}
+  .Home {
+    overflow-y: hidden;
+    padding-top: 120px;
+    line-height: 1.6;
+    height: 85vh;
+    background-color: rgb(40, 44, 52);
+    color: lightgrey;
+  }
 
-.about-block table {
-  padding: 0 5vw 0 8vw;
-  font-size: calc(8px + 2vmin);
-}
+  .Home h1 {
+    width: 70vw;
+  }
 
-.about-block table tr {
-  display: flex;
-  justify-content: flex-start;
-}
+  .About {
+    overflow-y: scroll;
+    padding-top: 15vh;
+    background-color: rgb(243, 243, 243);
+    color: #282c34;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    flex-flow: column;
+  }
 
-.about-block table th {
-  text-align: left;
-  align-items: center;
-  min-width: 250px;
-  padding: 0 50px 30px 0;
-}
+  .about-header {
+    width: 60vw;
+    text-align: left;
+  }
 
-.about-block table p {
-  padding: 0 10px 10px 10px;
-  margin: 0 0 0 0;
-  font-size: calc(8px + 2vmin);
-}
+  .about-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    margin: 5vh 0 5vh 0;
+    padding: 5vh 3vw 5vh 3vw;
+    background-color: rgb(40, 44, 52);
+    color: rgb(243, 243, 243);
+    float: left;
+    border-radius: 5px 10px;
+    border: 3px solid rgb(40, 44, 52);
+  }
 
-.Portfolio {
-  padding-top: 15vh;
-  display: flex;
-}
+  .about-block:nth-child(even) {
+    background-color: rgb(243, 243, 243);
+    color: rgb(40, 44, 52);
+  }
 
-.Portfolio img {
-  width: 25vw;
-  height: auto;
-}
+  .about-block p {
+    padding: 0 5vw 0 5vw;
+    font-size: calc(8px + 2vmin);
+  }
 
-.Portfolio .project {
-  margin: 20px 5vw 0 5vw;
-}
+  .about-block table {
+    padding: 0 5vw 0 8vw;
+    font-size: calc(8px + 2vmin);
+  }
+
+  .about-block table tr {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .about-block table th {
+    text-align: left;
+    align-items: center;
+    min-width: 250px;
+    padding: 0 50px 30px 0;
+  }
+
+  .about-block table p {
+    padding: 0 10px 10px 10px;
+    margin: 0 0 0 0;
+    font-size: calc(8px + 2vmin);
+  }
+
+  .Portfolio {
+    padding-top: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100vw;
+  }
+
+  .Portfolio img {
+    width: 25vw;
+    height: auto;
+  }
+
+  .Portfolio .project {
+    margin: 20px 3vw 0 3vw;
+  } */
 
 /* @keyframes App-logo-spin {
   from {
