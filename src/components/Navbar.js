@@ -10,28 +10,44 @@ const NavbarComponent = props => {
     color = "black";
   }
   return (
+    // <Nav variant="pills" defaultActiveKey="/home">
+    //   <Nav.Item>
+    //     <Nav.Link eventKey="/about">about</Nav.Link>
+    //   </Nav.Item>
+    //   <Nav.Item>
+    //     <Nav.Link eventKey="link-1">Option 2</Nav.Link>
+    //   </Nav.Item>
+    //   <Nav.Item>
+    //     <Nav.Link eventKey="disabled" disabled>
+    //       Disabled
+    //     </Nav.Link>
+    //   </Nav.Item>
+    // </Nav>
     <Navbar bg={props.bg} variant={props.bg} fixed="top">
-      <Navbar.Brand href="#home">
+      <Nav className="mr-auto" variant="pills">
         <Link to="/">
           <img
             src="https://i.imgur.com/kdRv3qa.png"
             className="App-logo"
             alt="logo"
-            width="100"
+            width="80"
           />
         </Link>
-      </Navbar.Brand>
-      <Nav className="mr-auto">
-        <Nav.Link href="/about">
-          <Link className="textLink" to="/about" style={{ color: color }}>
-            about
-          </Link>
-        </Nav.Link>
-        <Nav.Link href="/portfolio">
-          <Link className="textLink" to="/portfolio" style={{ color: color }}>
-            portfolio
-          </Link>
-        </Nav.Link>
+
+        <Nav.Item>
+          <Nav.Link>
+            <Link className="textLink" to="/about" style={{ color: color }}>
+              about
+            </Link>
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link>
+            <Link className="textLink" to="/portfolio" style={{ color: color }}>
+              portfolio
+            </Link>
+          </Nav.Link>
+        </Nav.Item>
       </Nav>
     </Navbar>
   );

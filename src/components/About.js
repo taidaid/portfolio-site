@@ -1,26 +1,24 @@
 import React, { useEffect } from "react";
-import NavbarComponent from "./Navbar";
-import Container from "react-bootstrap/Navbar";
+import { Container, Row } from "react-bootstrap";
 
 const About = () => {
-  useEffect(() => {
-    const body = document.querySelector("body");
+  // useEffect(() => {
+  //   const body = document.querySelector("body");
 
-    if (body) {
-      body.style.overflowY = "visible";
-    }
+  //   if (body) {
+  //     body.style.overflowY = "visible";
+  //   }
 
-    return () => {
-      if (body) {
-        body.style.overflowY = "hidden";
-      }
-    };
-  });
+  //   return () => {
+  //     if (body) {
+  //       body.style.overflowY = "hidden";
+  //     }
+  //   };
+  // });
 
   return (
-    <>
-      <NavbarComponent bg="light" />
-      <div className="About">
+    <Container className="About">
+      <Row>
         <div className="about-header">
           <h1>
             您好, 我是翁博展.
@@ -28,7 +26,9 @@ const About = () => {
             Hi, my name is Bryan Windsor.
           </h1>
         </div>
+      </Row>
 
+      <Row>
         <div className="about-block">
           <h3>
             Web Developer
@@ -55,6 +55,8 @@ const About = () => {
             </p>
           </div>
         </div>
+      </Row>
+      <Row>
         <div className="about-block">
           <h3>
             Educator
@@ -72,6 +74,8 @@ const About = () => {
             </p>
           </div>
         </div>
+      </Row>
+      <Row>
         <div className="about-block">
           <h3>
             Hobbies
@@ -108,7 +112,8 @@ const About = () => {
             </p>
           </div>
         </div>
-
+      </Row>
+      <Row>
         <div className="about-block">
           <h3>
             Adventurer
@@ -162,7 +167,8 @@ const About = () => {
           </table> */}
           </div>
         </div>
-
+      </Row>
+      <Row>
         <div className="about-block">
           <h3>
             IT Operations Manager
@@ -184,8 +190,8 @@ const About = () => {
             </p>
           </div>
         </div>
-      </div>
-    </>
+      </Row>
+    </Container>
   );
 };
 
