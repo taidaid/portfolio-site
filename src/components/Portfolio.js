@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Portfolio = () => {
   return (
-    <Container className="Portfolio">
+    <Container className="Portfolio pt-5">
       <Row>
         <Col>
           <div className="project" id="project-1">

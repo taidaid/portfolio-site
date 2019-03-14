@@ -6,7 +6,7 @@ import "../App.css";
 
 const Home = () => {
   return (
-    <Container className="Home">
+    <Container className="Home pt-5 mh-100">
       <Row>
         <Col md={{ span: 9, offset: 0 }}>
           <div>
