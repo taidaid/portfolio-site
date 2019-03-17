@@ -1,94 +1,87 @@
 /* React router transitions */
 .fade-appear,
 .fade-enter {
-  position: fixed;
+  position: absolute;
   opacity: 0;
   z-index: 1;
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%;
+  transform: translateX(-50%); */
 }
 
 .fade-appear-active,
 .fade-enter.fade-enter-active {
-  position: fixed;
+  position: absolute;
   opacity: 1;
   transition: opacity 300ms linear;
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%;
+  transform: translateX(-50%); */
 }
 
 .fade-exit {
-  position: fixed;
+  position: absolute;
   opacity: 1;
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%;
+  transform: translateX(-50%); */
 }
 
 .fade-exit.fade-exit-active {
-  position: fixed;
+  position: absolute;
   opacity: 0;
   transition: opacity 300ms linear;
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%;
+  transform: translateX(-50%); */
 }
 
 /* Custom styling on top of Bootstrap*/
 body {
   margin: 0;
   padding: 0;
+  font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100vw;
-  height: calc(100vh - calc(60px+1rem));
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.row:nth-child(even) .media {
-  background-color: rgb(25, 25, 25);
-}
-.row:nth-child(even) .media h3 {
-  color: white;
-}
-.row:nth-child(even) .media p {
-  color: lightgray;
+.navbar-nav {
+  font-size: 1.5rem;
 }
 
 .container-fluid {
   display: flex;
   flex-flow: column;
   margin-top: calc(60px + 1rem);
+  padding-top: 15vh;
 }
 
-.about-block {
-  align-items: center;
+.About > .row:nth-child(even) .media {
+  background-color: rgb(32, 32, 32);
+}
+.About > .row:nth-child(even) .media h3 {
+  color: white;
+}
+.About > .row:nth-child(even) .media p {
+  color: lightgray;
 }
 
-.navbar-nav {
-  font-size: 1.5rem;
-  align-items: center;
+.Portfolio img {
+  max-width: 100%;
+  border: 1px solid black;
+}
+
+.About img {
+  width: 15vw;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
-p {
-  font-size: 16px;
-}
-
-body {
-  font-family: Lato, Arial, Helvetica, sans-serif;
-}
-
-html {
-  font-size: 16px;
+a:hover {
+  color: inherit;
 }
 
 /* .App {

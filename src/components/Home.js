@@ -6,9 +6,9 @@ import "../App.css";
 
 const Home = () => {
   return (
-    <Container className="Home pt-5 mh-100">
+    <Container fluid className="Home">
       <Row>
-        <Col md={{ span: 9, offset: 0 }}>
+        <Col md={{ span: 9, offset: 1 }}>
           <div>
             <h1>
               Hello World.

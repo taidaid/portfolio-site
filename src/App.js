@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -9,7 +9,7 @@ import "./App.css";
 
 class App extends React.Component {
   authenticate() {
-    return new Promise(resolve => setTimeout(resolve, 2000));
+    return new Promise(resolve => setTimeout(resolve, 500));
   }
 
   componentDidMount() {
@@ -21,7 +21,7 @@ class App extends React.Component {
         setTimeout(() => {
           // remove from DOM
           ele.outerHTML = "";
-        }, 2000);
+        }, 500);
       }
     });
   }
@@ -35,7 +35,7 @@ class App extends React.Component {
             <TransitionGroup>
               {/* React router transitions */}
               <CSSTransition key={location.key} classNames="fade" timeout={300}>
-                <Switch location={location}>
+                <Switch className="h-100" location={location}>
                   {/* Website routes with specified url endings */}
                   <Route path="/about" component={About} />
                   <Route path="/portfolio" component={Portfolio} />
