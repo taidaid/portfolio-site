@@ -1,21 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
-
-import logo from "./assets/logo.png";
+import NavbarComponent from "./components/NavbarComponent";
+import Footer from "./components/Footer";
 import "./App.css";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { isLoading: true };
-  }
-
   authenticate() {
-    return new Promise(resolve => setTimeout(resolve, 2000));
+    return new Promise(resolve => setTimeout(resolve, 500));
   }
 
   componentDidMount() {
@@ -27,41 +22,32 @@ class App extends React.Component {
         setTimeout(() => {
           // remove from DOM
           ele.outerHTML = "";
-        }, 2000);
+        }, 500);
       }
     });
   }
 
   render() {
     return (
-      <Router>
+      <div className="App">
+        <NavbarComponent bg="dark" />
         <Route
           render={({ location }) => (
             <TransitionGroup>
+              {/* React router transitions */}
               <CSSTransition key={location.key} classNames="fade" timeout={300}>
-                <div className="App">
-                  <div className="navbar">
-                    <Link to="/">
-                      <img src={logo} className="App-logo" alt="logo" />
-                    </Link>
-                    <Link className="textLink" to="/about">
-                      about
-                    </Link>
-                    <Link className="textLink" to="/portfolio">
-                      portfolio
-                    </Link>
-                  </div>
-                  <Switch location={location}>
-                    <Route path="/about" component={About} />
-                    <Route path="/portfolio" component={Portfolio} />
-                    <Route exact path="/" component={Home} />
-                  </Switch>
-                </div>
+                <Switch location={location}>
+                  {/* Website routes with specified url endings */}
+                  <Route path="/about" component={About} />
+                  <Route path="/portfolio" component={Portfolio} />
+                  <Route path="/" component={Home} />
+                </Switch>
               </CSSTransition>
             </TransitionGroup>
           )}
         />
-      </Router>
+        <Footer />
+      </div>
     );
   }
 }

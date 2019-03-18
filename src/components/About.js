@@ -1,190 +1,193 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Container, Row, Media } from "react-bootstrap";
+import WaterfallClimb from "../assets/Waterfall-Climb.jpg";
+import NPCLogo from "../assets/NPC-Logo.jpg";
+import ThacBanGioc from "../assets/Thac Ban Gioc Vietnam.jpg";
+import WebDeveloperPhoto from "../assets/WebDeveloperPhoto.jpg";
+import EducatorImage from "../assets/EducatorImage.png";
 
 const About = () => {
-  useEffect(() => {
-    const body = document.querySelector("body");
-
-    if (body) {
-      body.style.overflowY = "visible";
-    }
-
-    return () => {
-      if (body) {
-        body.style.overflowY = "hidden";
-      }
-    };
-  });
-
   return (
-    <div className="About">
-      <div className="about-header">
-        <h1>您好, 我是翁博展.</h1>
-        <h1>Hi, my name is Bryan Windsor.</h1>
-      </div>
+    <Container fluid className="About align-items-center">
+      <Row className="justify-content-center mb-5 col-12">
+        <div className="about-header ">
+          <h1>歡迎光臨!</h1>
+          <p>
+            '歡迎光臨' means 'Welcome' in Chinese. Thanks for visiting my
+            website. My name is Bryan, and I'm 30 years old. If you are
+            interested in finding out more about me, my interests, projects or
+            skills, please browse around.
+          </p>
+        </div>
+      </Row>
 
-      <div className="about-block">
-        <h3>Web Developer</h3>
-        <div>
-          <p>
-            {/* I was introduced to programming in Java over 10 years ago as part of
-            my degree in Management Information Systems. Students with an MIS
-            major study how companies and individuals can use systems and the
-            generated data in decision-making processes. In other words, MIS
-            students tend to become analysts and managers, rather than hands-on
-            specialists. During my coursework, I began to fall in love with
-            programming. In every group project, I quickly volunteered to do the
-            back-end logic in Java. After graduation, my attention shifted to
-            the technical aspects of IT Operations, system and network
-            administration, security, efficiency, and compliance. */}{" "}
-            Dolorum omnis veniam eum voluptas nam et distinctio. Culpa sed sequi
-            assumenda qui nam. Omnis veniam iure et voluptas autem ratione.
-          </p>
-          <p>
-            {/* For over a year now, I have been fully focused on web development. A
-            lot has changed in 10 years, but not the fundamentals of JS, HTML,
-            and CSS. I love it more than ever as I can quickly build out single
-            page applications in React.js and */}{" "}
-            Sunt id esse consequatur iusto reiciendis et ipsum autem dolor.
-            Repellendus reiciendis expedita modi saepe nam et numquam. Atque
-            officiis sit ut architecto sit et delectus.
-          </p>
-        </div>
-      </div>
-      <div className="about-block">
-        <h3>Educator</h3>
-        <div>
-          <p>
-            {/* During my time in Taiwan, I became an English teacher for
-            Chinese-speaking students. Through my Mandarin, I am able to easily
-            and efficiently explain complex concepts. This skill has earned me
-            hundreds of rave reviews from students and parents. */}
-            Est provident perspiciatis non voluptate molestias omnis laudantium
-            nesciunt est. Saepe laudantium eum quos excepturi. Asperiores
-            numquam doloribus qui qui consequatur ratione. Nihil assumenda eaque
-            nemo officia.
-          </p>
-        </div>
-      </div>
-      <div className="about-block">
-        <h3>Hobbies</h3>
-        <div>
-          <p>
-            Est provident perspiciatis non voluptate molestias omnis laudantium
-            nesciunt est. Saepe laudantium eum quos excepturi. Asperiores
-            numquam doloribus qui qui consequatur ratione. Nihil assumenda eaque
-            nemo officia.
-            {/* I have always had a curious mind and a hands-on attitude. When I was
-            young, I helped my father build stairs, forts, and playgrounds. I
-            landscaped our home and church, built homes for the needy, and
-            cooked in soup kitchens. */}
-          </p>
-          <p>
-            Est provident perspiciatis non voluptate molestias omnis laudantium
-            nesciunt est. Saepe laudantium eum quos excepturi. Asperiores
-            numquam doloribus qui qui consequatur ratione. Nihil assumenda eaque
-            nemo officia.
-            {/* My first foray into history was the American Civil War, followed
-            closely by the history of Rome. In recent years, I have focused on
-            revolutions in particular, including French, English, American,
-            South American, Haitian revolutions and now I am learning about the
-            political turmoil of 1848 in Europe. */}
-          </p>
-          <p>
-            {" "}
-            Est provident perspiciatis non voluptate molestias omnis laudantium
-            nesciunt est. Saepe laudantium eum quos excepturi. Asperiores
-            numquam doloribus qui qui consequatur ratione. Nihil assumenda eaque
-            nemo officia.
-            {/* I first began learning languages when I was 12 years old and
-            required to take introductory courses in French and Spanish. I
-            quickly discovered that I had a knack for French. After 6 years of
-            studying French, I branched out into Mandarin Chinese and loved it.
-            I studied Chinese and French concurrently for 2 years in university
-            before traveling to China for a summer homestay program. I achieved
-            limited fluency during this program and tested out of all Mandarin
-            courses offered at my school. Sadly, this led to a decline in my
-            ability. After graduation and working in Healthcare IT for 3 years,
-            I decided I must revive this talent of mine and again enrolled in an
-            intensive Mandarin program, this time in Taiwan. After 4 years of
-            study, travel, and work in Asia, my Mandarin reached a comfotable
-            level of professional proficiency. I began a Chinese Language club
-            in Utrecht, Netherlands in order to share my passion with others. I
-            have studied Chinese, French, Dutch, German, and Spanish. */}
-          </p>
-        </div>
-      </div>
+      <Row className="justify-content-center mb-5 col-12">
+        <Media className="about-block border border-white rounded  ">
+          <img src={WaterfallClimb} alt="Waterfall Climb" />
+          <Media.Body className=" ">
+            <div className="text-center">
+              <h3>
+                I seek challenge...
+                {/* <span role="img" aria-label="Man Technologist emoji">
+                  👨‍💻
+                </span> */}
+              </h3>
+            </div>
+            <p>
+              Whether it is training for a race or learning a language, I seek
+              the thrill of accomplishment. As a professional, I am proud to
+              have established and directed an effective and cost-efficient IT
+              department, as well as educated hundreds of students.
+              {/* Ever since I was a child, I have been endlessly curious and
+              persistent in my pursuit of learning. I discovered my passion for
+              language in the 6th grade and began learning French. Since then, I
+              have studied English, Chinese, French, Dutch, German, Portuguese,
+              and Spanish (with varying competency). Programming, Networking,
+              Languages, Athletics */}
+            </p>
+            <p>
+              Throughout my life, I have participated in countless athletic
+              competitions in baseball, football, rowing, lacrosse, and running.
+              In my pursuit of knowledge, I have achieved proficiency in
+              Mandarin and French, and, hopefully soon, Dutch. I have learned
+              many computer languages as well, including JavaScript, CSS, HTML,
+              Java, Python, SQL, and more.
+            </p>
+            <p>
+              I see programming as one of the most challenging and rewarding
+              occupations. Through programming, I have the opportunity to
+              stretch my mind by completing intricate designs and functions
+              while simultaneously creating real value for people.
+            </p>
+          </Media.Body>
+        </Media>
+      </Row>
 
-      <div className="about-block">
-        <h3>Adventurer</h3>
-        <div>
-          <p>
-            {/* I learned to ski at 6 years old and never looked back. I have been
-            traveling, skiing, snowboarding, kitesurfing, wakeboarding, SCUBA
-            diving, cliff diving, free climbing, hiking, racing, exploring, and
-            loving every minute of it. */}
-            Est provident perspiciatis non voluptate molestias omnis laudantium
-            nesciunt est. Saepe laudantium eum quos excepturi. Asperiores
-            numquam doloribus qui qui consequatur ratione. Nihil assumenda eaque
-            nemo officia.
-          </p>
-          {/* <table>
-            <tbody>
-              <tr>
-                <th>Countries Explored</th>
-                <td>
-                  <p>
-                    The Netherlands, Austria, Vietnam, Taiwan, China, Thailand,
-                    Malaysia, Singapore, USA and many more...
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <th>Places Dived</th>
-                <td>
-                  <p>GA Aquarium, Thailand, St. Thomas, Fiji</p>
-                </td>
-              </tr>
-              <tr>
-                <th>Mountains Skiied</th>
-                <td>
-                  <p>Vale, Park City, Winterplace</p>
-                </td>
-              </tr>
-              <tr>
-                <th>Walls Climbed</th>
-                <td>
-                  <p>Taiwan, Vietnam, The Netherlands</p>
-                </td>
-              </tr>
-            </tbody>
-          </table> */}
-        </div>
-      </div>
+      <Row className="justify-content-center mb-5 col-12">
+        <Media className="about-block border border-white rounded  ">
+          <img src={WebDeveloperPhoto} alt="Bryan Windsor" />
+          <Media.Body className=" ">
+            <div className=" text-center ">
+              <h3>
+                Web Developer
+                {/* <span role="img" aria-label="Man Technologist emoji">
+                  👨‍💻
+                </span> */}
+              </h3>
+            </div>
+            <p>
+              I began programming in Java over 10 years ago as part of my degree
+              in Management Information Systems and learned to build
+              applications using the LAMP stack. After graduation, I utilized
+              PowerShell and SQL for scripting and reporting as a part of my job
+              duties. Since then I have become deeply familiar with the MERN
+              stack,including React.js, Redux, JavaScript, HTML/CSS, Bootstrap,
+              Node.js, Express, PostgreSQL, and MongoDB.
+            </p>
+          </Media.Body>
+        </Media>
+      </Row>
 
-      <div className="about-block">
-        <h3>IT Operations Manager</h3>
-        <div>
-          <p>
-            {/* After graduation from university, I had the opportunity to lead an
-            IT department for 3 years in a healthcare management startup. In the
-            beginning, the company had one outsourced IT support specialist for
-            more than 50 employees and scattered, outdated, physical servers on
-            tape backups. By the end, I was truly working as a CIO, overseeing
-            an in-house team of 4 IT field technicians, a network engineer, and
-            a sysadmin. By utilizing an MSP for level 2 and 3 tickets that were
-            beyond our field techs' abilties, we effectively managed costs and
-            quality-of-service. With a dedicated "firefighting" team, the
-            sysadmin, network engineer, and myself were free to put our thoughts
-            on projects first and accomplish amazing feats, even though we were
-            "building the plane while flying". */}{" "}
-            Est provident perspiciatis non voluptate molestias omnis laudantium
-            nesciunt est. Saepe laudantium eum quos excepturi. Asperiores
-            numquam doloribus qui qui consequatur ratione. Nihil assumenda eaque
-            nemo officia.
-          </p>
-        </div>
-      </div>
-    </div>
+      <Row className="justify-content-center mb-5 col-12">
+        <Media className="about-block border border-white rounded  ">
+          <img src={EducatorImage} alt="English-Chinese" />
+          <Media.Body className="">
+            <div className="text-center">
+              <h3>
+                Educator
+                {/* <span role="img" aria-label="Man Teacher emoji">
+                  👨‍🏫
+                </span> */}
+              </h3>
+            </div>
+            <p>
+              My journey to becoming an educator began with learning Mandarin
+              Chinese. I have always loved studying languages and to achieve
+              fluency in Mandarin, I attended one of the most prestigious
+              Mandarin training insitutions in the world, the Mandarin Training
+              Center at National Taiwan Normal University. While there, I began
+              teaching English to Taiwanese children and found that I loved it!
+              Since then, I have continued to teach while improving my
+              development skills daily. Teaching provides a wonderful chance for
+              me to interact with young minds and exchange ideas across
+              generational and cultural gaps. It also helps me maintain my
+              Mandarin skills.{" "}
+              <span role="img" aria-label="Smirking Face">
+                😏
+              </span>
+            </p>
+          </Media.Body>
+        </Media>
+      </Row>
+
+      <Row className="justify-content-center mb-5 col-12">
+        <Media className="about-block border rounded  ">
+          <img src={NPCLogo} alt="National Pain Care" />
+          <Media.Body className="">
+            <div className="text-center">
+              <h3>
+                IT Operations Manager
+                {/* <span role="img" aria-label="Man Office Worker emoji">
+                👨‍💼
+              </span> */}
+              </h3>
+            </div>
+            <p>
+              After graduation, I worked for a healthcare management company,
+              National Pain Care. Unfortunately, the company ran into trouble
+              and was finally shut down in 2016. It was an innovative company
+              with hard-working, caring, and intelligent people. I learned a
+              great deal from my colleagues about system design and
+              administration, personnel and project management, and even radio,
+              TV, and digital marketing.
+            </p>
+            <p>
+              I was charged with managing all marketing and IT projects and
+              staff. I even functioned as an office manager for 4 locations and
+              50 employees for over 6 months. With my inital goals completed and
+              the demise of the company, I found myself in an excellent position
+              to pursue a lifelong dream, fluent Mandarin.
+            </p>
+          </Media.Body>
+        </Media>
+      </Row>
+
+      <Row className="justify-content-center mb-5 col-12">
+        <Media className="about-block border border-white rounded  ">
+          <img src={ThacBanGioc} alt="Thac Ban Gioc" />
+          <Media.Body className="">
+            <div className="text-center">
+              <h3>
+                Adventurer
+                {/* <span
+                  role="img"
+                  aria-label="Globe Showing Asia-Australia emoji"
+                >
+                  🌏
+                </span> */}
+              </h3>
+            </div>
+            <p>
+              While learning Mandarin in Taiwan, I had the opportunity to
+              explore Southeast Asia. I visited Vietnam, Cambodia, Thailand,
+              Japan, Singapore, and Malaysia while there. In total, I have
+              visited more than 12 countries outside of Europe and 8 countries
+              within.
+              {/* <em>
+                Traveling Asia/Europe, living in China, Taiwan, Vietnam,
+                Netherlands
+              </em>
+              , skiing/snowboarding, SCUBA diving, bouldering, yoga,
+              running/races */}
+            </p>
+            <p>
+              I enjoy a good thrill and free climbed waterfalls, hiked through
+              rainforests, SCUBA dived, and kite surfed in the Gulf of Thailand.
+            </p>
+          </Media.Body>
+        </Media>
+      </Row>
+    </Container>
   );
 };
 
