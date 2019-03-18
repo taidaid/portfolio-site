@@ -5,8 +5,8 @@ import GmailLogo from "../assets/Gmail-Mark-32px.png";
 
 const Footer = () => {
   return (
-    <footer class="footer text-center col-12 p-2">
-      <div class="container col-3">
+    <footer className="footer text-center justify-content-center col-12">
+      <div className="d-flex justify-content-center align-items-center">
         <span>
           <a href="https://www.linkedin.com/in/bryanwindsor/">
             <img className="p-2" src={LinkedinLogo} alt="Linkedin Profile" />
@@ -22,9 +22,7 @@ const Footer = () => {
             <img className="p-2" src={GmailLogo} alt="Gmail" />
           </a>
         </span>
-        <span className="p-2" class="text-muted">
-          Bryan Windsor &copy; 2019
-        </span>
+        <span className="p-2 text-muted">Bryan Windsor &copy; 2019</span>
       </div>
     </footer>
   );

@@ -3,9 +3,9 @@ import { Container, Row, Media } from "react-bootstrap";
 
 const About = () => {
   return (
-    <Container fluid className="About">
+    <Container fluid className="About align-items-center">
       <Row className="justify-content-center mb-5 col-12">
-        <div className="about-header col-8">
+        <div className="about-header ">
           <h1>歡迎光臨!</h1>
           <p>
             '歡迎光臨' means 'Welcome' in Chinese. Thanks for visiting my
@@ -16,10 +16,10 @@ const About = () => {
         </div>
       </Row>
       <Row className="justify-content-center mb-5 col-12">
-        <Media className="about-block border border-white rounded p-3 col-8">
+        <Media className="about-block border border-white rounded  ">
           <img src="https://i.imgur.com/8Y3a0AJl.jpg" alt="Bryan Windsor" />
-          <Media.Body className="pl-4 ">
-            <div className="pr-4">
+          <Media.Body className=" ">
+            <div className="text-center">
               <h3>
                 Aspiring Polymath
                 {/* <span role="img" aria-label="Man Technologist emoji">
@@ -50,10 +50,10 @@ const About = () => {
         </Media>
       </Row>
       <Row className="justify-content-center mb-5 col-12">
-        <Media className="about-block border border-white rounded p-3 col-8">
+        <Media className="about-block border border-white rounded  ">
           <img src="https://i.imgur.com/8Y3a0AJl.jpg" alt="Bryan Windsor" />
-          <Media.Body className="pl-4 ">
-            <div className="pr-4  ">
+          <Media.Body className=" ">
+            <div className=" text-center ">
               <h3>
                 Web Developer
                 {/* <span role="img" aria-label="Man Technologist emoji">
@@ -83,13 +83,13 @@ const About = () => {
         </Media>
       </Row>
       <Row className="justify-content-center mb-5 col-12">
-        <Media className="about-block border border-white rounded p-3 col-8">
+        <Media className="about-block border border-white rounded  ">
           <img
             src="https://gtelocalize.com/wp-content/uploads/2018/06/Icon-co-GTE-14.png"
             alt="English-Chinese"
           />
-          <Media.Body className="pl-4">
-            <div className="pr-4">
+          <Media.Body className="">
+            <div className="text-center">
               <h3>
                 Educator
                 {/* <span role="img" aria-label="Man Teacher emoji">
@@ -113,14 +113,14 @@ const About = () => {
         </Media>
       </Row>
       <Row className="justify-content-center mb-5 col-12">
-        <Media className="about-block border border-white rounded p-3 col-8">
+        <Media className="about-block border border-white rounded  ">
           <img
             src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/38245360_10108936681735010_3005266858430431232_n.jpg?_nc_cat=103&_nc_ht=scontent-atl3-1.xx&oh=f04c27941ab27a4b96fd66ed6c0c01b6&oe=5D14438D"
             alt="Waterfall Climb"
           />
 
-          <Media.Body className="pl-4 col-9">
-            <div className="pr-4">
+          <Media.Body className="">
+            <div className="text-center">
               <h3>
                 Hobbies
                 {/* <span role="img" aria-label="Books emoji">
@@ -157,14 +157,14 @@ const About = () => {
         </Media>
       </Row>
       <Row className="justify-content-center mb-5 col-12">
-        <Media className="about-block border border-white rounded p-3 col-8">
+        <Media className="about-block border border-white rounded  ">
           <img
             src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/27983147_10108339023656590_6739661971660958992_o.jpg?_nc_cat=103&_nc_ht=scontent-atl3-1.xx&oh=49514d5055de539252cf5abe019f5ec6&oe=5D20412B"
             alt="Thac Ban Gioc"
           />
 
-          <Media.Body className="pl-4 col-9">
-            <div className="pr-4">
+          <Media.Body className="">
+            <div className="text-center">
               <h3>
                 Adventurer
                 {/* <span
@@ -208,14 +208,14 @@ const About = () => {
         </Media>
       </Row>
       <Row className="justify-content-center mb-5 col-12">
-        <Media className="about-block border border-white rounded p-3 col-8">
+        <Media className="about-block border rounded  ">
           <img
             src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/1012871_10103074023608890_1497890629_n.jpg?_nc_cat=104&_nc_ht=scontent-atl3-1.xx&oh=6269ee30dac1c9e0f8fa5267c2ee16ef&oe=5D131FCC"
             alt="IT Manager"
           />
 
-          <Media.Body className="pl-4">
-            <div className="pr-4">
+          <Media.Body className="">
+            <div className="text-center">
               <h3>
                 IT Operations Manager
                 {/* <span role="img" aria-label="Man Office Worker emoji">

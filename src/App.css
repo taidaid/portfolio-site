@@ -1,11 +1,9 @@
-/* React router transitions */
+/* CSSTransitions with React-Router   */
 .fade-appear,
 .fade-enter {
   position: absolute;
   opacity: 0;
   z-index: 1;
-  /* left: 50%;
-  transform: translateX(-50%); */
 }
 
 .fade-appear-active,
@@ -13,30 +11,24 @@
   position: absolute;
   opacity: 1;
   transition: opacity 300ms linear;
-  /* left: 50%;
-  transform: translateX(-50%); */
 }
 
 .fade-exit {
   position: absolute;
   opacity: 1;
-  /* left: 50%;
-  transform: translateX(-50%); */
 }
 
 .fade-exit.fade-exit-active {
   position: absolute;
   opacity: 0;
   transition: opacity 300ms linear;
-  /* left: 50%;
-  transform: translateX(-50%); */
 }
 
-/* Custom styling on top of Bootstrap*/
+/* Custom styling over Bootsrap*/
 
 .footer {
-  position: fixed !important;
-  bottom: 0 !important;
+  flex-flow: row;
+  width: 100%;
 }
 
 .navbar-nav {
@@ -53,9 +45,11 @@
 .About > .row:nth-child(even) .media {
   background-color: rgb(32, 32, 32);
 }
+
 .About > .row:nth-child(even) .media h3 {
   color: white;
 }
+
 .About > .row:nth-child(even) .media p {
   color: lightgray;
 }
@@ -78,141 +72,67 @@ a:hover {
   color: inherit;
 }
 
-/* .App {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 100vw;
-    font-size: calc(10px + 2vmin);
+.media {
+  padding: 1rem 0;
+}
+
+.media-body {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+/* Small screen styles, width is set to iPhoneX width*/
+@media only screen and (max-width: 768px) {
+  .about-block,
+  .about-header,
+  .footer {
+    width: 100%;
+    padding: 0;
+  }
+  .about-block > img {
+    display: none;
   }
 
-  .App-logo {
-    pointer-events: none;
-    width: auto;
-    height: 100px;
-  }
-
-  .textLink {
-    padding-left: 20px;
-  }
-
-  .textLink:active {
-    color: lightblue;
-  }
-
-
-
-  .navbar {
-    background-color: rgb(40, 44, 52);
-    width: 100vw;
-    height: 15vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    flex-flow: row;
-    display: flex;
-    align-items: center;
-  }
-
-  .Home {
-    overflow-y: hidden;
-    padding-top: 120px;
-    line-height: 1.6;
-    height: 85vh;
-    background-color: rgb(40, 44, 52);
-    color: lightgrey;
-  }
-
-  .Home h1 {
-    width: 70vw;
-  }
-
-  .About {
-    overflow-y: scroll;
-    padding-top: 15vh;
-    background-color: rgb(243, 243, 243);
-    color: #282c34;
-    display: flex;
-    align-items: center;
-    width: 100vw;
+  .project-block {
     flex-flow: column;
   }
 
+  .Home {
+    font-size: 12px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+/* Large screen styles */
+@media only screen and (min-width: 768px) {
+  /* Custom styling on top of Bootstrap*/
+  .about-block,
   .about-header {
-    width: 60vw;
-    text-align: left;
+    padding: 1rem;
   }
 
-  .about-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60vw;
-    margin: 5vh 0 5vh 0;
-    padding: 5vh 3vw 5vh 3vw;
-    background-color: rgb(40, 44, 52);
-    color: rgb(243, 243, 243);
-    float: left;
-    border-radius: 5px 10px;
-    border: 3px solid rgb(40, 44, 52);
+  .about-block,
+  .about-header,
+  .footer {
+    width: 66%;
+    padding: 1.5rem;
   }
 
-  .about-block:nth-child(even) {
-    background-color: rgb(243, 243, 243);
-    color: rgb(40, 44, 52);
+  .media {
+    width: 66%;
+  }
+  .media-image {
+    width: 50%;
   }
 
-  .about-block p {
-    padding: 0 5vw 0 5vw;
-    font-size: calc(8px + 2vmin);
+  .media-body {
+    width: 50%;
   }
 
-  .about-block table {
-    padding: 0 5vw 0 8vw;
-    font-size: calc(8px + 2vmin);
+  .Home {
+    width: 66%;
   }
 
-  .about-block table tr {
-    display: flex;
-    justify-content: flex-start;
+  .project-block {
   }
-
-  .about-block table th {
-    text-align: left;
-    align-items: center;
-    min-width: 250px;
-    padding: 0 50px 30px 0;
-  }
-
-  .about-block table p {
-    padding: 0 10px 10px 10px;
-    margin: 0 0 0 0;
-    font-size: calc(8px + 2vmin);
-  }
-
-  .Portfolio {
-    padding-top: 15vh;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100vw;
-  }
-
-  .Portfolio img {
-    width: 25vw;
-    height: auto;
-  }
-
-  .Portfolio .project {
-    margin: 20px 3vw 0 3vw;
-  } */
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+}
