@@ -10,7 +10,7 @@ const NavbarComponent = props => {
     color = "black";
   }
   return (
-    <Navbar bg={props.bg} variant={props.bg} fixed="top">
+    <Navbar fixed="top">
       <Nav variant="pills">
         <Link to="/">
           <img

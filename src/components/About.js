@@ -1,5 +1,8 @@
 import React from "react";
 import { Container, Row, Media } from "react-bootstrap";
+import WaterfallClimb from "../assets/Waterfall-Climb.jpg";
+import NPCLogo from "../assets/NPC-Logo.jpg";
+import ThacBanGioc from "../assets/Thac Ban Gioc Vietnam.jpg";
 
 const About = () => {
   return (
@@ -15,40 +18,49 @@ const About = () => {
           </p>
         </div>
       </Row>
+
       <Row className="justify-content-center mb-5 col-12">
         <Media className="about-block border border-white rounded  ">
-          <img src="https://i.imgur.com/8Y3a0AJl.jpg" alt="Bryan Windsor" />
+          <img src={WaterfallClimb} alt="Waterfall Climb" />
           <Media.Body className=" ">
             <div className="text-center">
               <h3>
-                Aspiring Polymath
+                I seek challenge...
                 {/* <span role="img" aria-label="Man Technologist emoji">
                   👨‍💻
                 </span> */}
               </h3>
             </div>
             <p>
-              Ever since I was a child, I have been endlessly curious and
+              Whether it is training for a race or learning a language, I seek
+              the thrill of accomplishment. As a professional, I am proud to
+              have established and directed an effective and cost-efficient IT
+              department, as well as educated hundreds of students.
+              {/* Ever since I was a child, I have been endlessly curious and
               persistent in my pursuit of learning. I discovered my passion for
               language in the 6th grade and began learning French. Since then, I
               have studied English, Chinese, French, Dutch, German, Portuguese,
               and Spanish (with varying competency). Programming, Networking,
-              Languages, Athletics
-              {/* Quia unde molestias. Itaque laboriosam perferendis. Sit nihil
-              molestiae voluptatem expedita nihil reprehenderit. Reprehenderit
-              repudiandae eaque ex rerum qui. Illo fugit quia id aut veniam modi
-              aut. Sit molestiae vel mollitia alias totam quis. Omnis odit
-              voluptatem et sed dolores cupiditate veniam qui. Qui odit corrupti
-              voluptatum ut voluptatem illo debitis. Eos odit illo
-              necessitatibus sit laborum sit. Ab aut mollitia ad ullam sit. Et
-              aut possimus inventore quod quia possimus magnam facere. Nobis
-              tenetur qui enim blanditiis ut eligendi. Sit consequuntur itaque
-              eaque ut ipsum dolores quaerat. Dolores quam perspiciatis facilis
-              ut debitis. */}
+              Languages, Athletics */}
+            </p>
+            <p>
+              Throughout my life, I have participated in countless athletic
+              competitions in baseball, football, rowing, lacrosse, and running.
+              In my pursuit of knowledge, I have achieved proficiency in
+              Mandarin and French, and, hopefully soon, Dutch. I have learned
+              many computer languages as well, including JavaScript, CSS, HTML,
+              Java, Python, SQL, and more.
+            </p>
+            <p>
+              I see programming as one of the most challenging and rewarding
+              occupations. Through programming, I have the opportunity to
+              stretch my mind by completing intricate designs and functions
+              while simultaneously creating real value for people.
             </p>
           </Media.Body>
         </Media>
       </Row>
+
       <Row className="justify-content-center mb-5 col-12">
         <Media className="about-block border border-white rounded  ">
           <img src="https://i.imgur.com/8Y3a0AJl.jpg" alt="Bryan Windsor" />
@@ -63,25 +75,17 @@ const About = () => {
             </div>
             <p>
               I began programming in Java over 10 years ago as part of my degree
-              in Management Information Systems. After graduation, I managed IT
-              operations including, system and network administration, security,
-              strategy, and compliance, and found scripting to be an invaluable
-              tool.
-              {/* Quia unde molestias. Itaque laboriosam perferendis. Sit nihil
-              molestiae voluptatem expedita nihil reprehenderit. Reprehenderit
-              repudiandae eaque ex rerum qui. Illo fugit quia id aut veniam modi
-              aut. Sit molestiae vel mollitia alias totam quis. Omnis odit
-              voluptatem et sed dolores cupiditate veniam qui. Qui odit corrupti
-              voluptatum ut voluptatem illo debitis. Eos odit illo
-              necessitatibus sit laborum sit. Ab aut mollitia ad ullam sit. Et
-              aut possimus inventore quod quia possimus magnam facere. Nobis
-              tenetur qui enim blanditiis ut eligendi. Sit consequuntur itaque
-              eaque ut ipsum dolores quaerat. Dolores quam perspiciatis facilis
-              ut debitis. */}
+              in Management Information Systems and learned to build
+              applications using the LAMP stack. After graduation, I utilized
+              PowerShell and SQL for scripting and reporting as a part of my job
+              duties. Since then I have become deeply familiar with the MERN
+              stack,including React.js, Redux, JavaScript, HTML/CSS, Bootstrap,
+              Node.js, Express, PostgreSQL, and MongoDB.
             </p>
           </Media.Body>
         </Media>
       </Row>
+
       <Row className="justify-content-center mb-5 col-12">
         <Media className="about-block border border-white rounded  ">
           <img
@@ -101,68 +105,57 @@ const About = () => {
               My journey to becoming an educator began with learning Mandarin
               Chinese. I have always loved studying languages and to achieve
               fluency in Mandarin, I attended one of the most prestigious
-              Mandarin training insitutions in the world, the Mandarin Traning
+              Mandarin training insitutions in the world, the Mandarin Training
               Center at National Taiwan Normal University. While there, I began
               teaching English to Taiwanese children and found that I loved it!
-              {/* Est provident perspiciatis non voluptate molestias omnis
-              laudantium nesciunt est. Saepe laudantium eum quos excepturi.
-              Asperiores numquam doloribus qui qui consequatur ratione. Nihil
-              assumenda eaque nemo officia. */}
+              Since then, I have continued to teach while improving my
+              development skills daily. Teaching provides a wonderful chance for
+              me to interact with young minds and exchange ideas across
+              generational and cultural gaps. It also helps me maintain my
+              Mandarin skills.{" "}
+              <span role="img" aria-label="Smirking Face">
+                😏
+              </span>
             </p>
           </Media.Body>
         </Media>
       </Row>
-      <Row className="justify-content-center mb-5 col-12">
-        <Media className="about-block border border-white rounded  ">
-          <img
-            src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/38245360_10108936681735010_3005266858430431232_n.jpg?_nc_cat=103&_nc_ht=scontent-atl3-1.xx&oh=f04c27941ab27a4b96fd66ed6c0c01b6&oe=5D14438D"
-            alt="Waterfall Climb"
-          />
 
+      <Row className="justify-content-center mb-5 col-12">
+        <Media className="about-block border rounded  ">
+          <img src={NPCLogo} alt="National Pain Care" />
           <Media.Body className="">
             <div className="text-center">
               <h3>
-                Hobbies
-                {/* <span role="img" aria-label="Books emoji">
-                  📚
-                </span>
-                <span role="img" aria-label="Snowboarder emoji">
-                  🏂
-                </span> */}
+                IT Operations Manager
+                {/* <span role="img" aria-label="Man Office Worker emoji">
+                👨‍💼
+              </span> */}
               </h3>
             </div>
             <p>
-              Running, Hiking, Rowing, Lifting, Yoga, Climbing
-              {/* Est provident perspiciatis non voluptate molestias omnis
-              laudantium nesciunt est. Saepe laudantium eum quos excepturi.
-              Asperiores numquam doloribus qui qui consequatur ratione. Nihil
-              assumenda eaque nemo officia. */}
+              After graduation, I worked for a healthcare management company,
+              National Pain Care. Unfortunately, the company ran into trouble
+              and was finally shut down in 2016. It was an innovative company
+              with hard-working, caring, and intelligent people. I learned a
+              great deal from my colleagues about system design and
+              administration, personnel and project management, and even radio,
+              TV, and digital marketing.
             </p>
             <p>
-              Avid sci-fi and epic fantasy reader. Enjoy reading classics,
-              especially from other cultures.
-              {/* Est provident perspiciatis non voluptate molestias omnis
-              laudantium nesciunt est. Saepe laudantium eum quos excepturi.
-              Asperiores numquam doloribus qui qui consequatur ratione. Nihil
-              assumenda eaque nemo officia. */}
-            </p>
-            <p>
-              {/* Languages */}
-              {/* Est provident perspiciatis non voluptate molestias omnis
-              laudantium nesciunt est. Saepe laudantium eum quos excepturi.
-              Asperiores numquam doloribus qui qui consequatur ratione. Nihil
-              assumenda eaque nemo officia. */}
+              I was charged with managing all marketing and IT projects and
+              staff. I even functioned as an office manager for 4 locations and
+              50 employees for over 6 months. With my inital goals completed and
+              the demise of the company, I found myself in an excellent position
+              to pursue a lifelong dream, fluent Mandarin.
             </p>
           </Media.Body>
         </Media>
       </Row>
+
       <Row className="justify-content-center mb-5 col-12">
         <Media className="about-block border border-white rounded  ">
-          <img
-            src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/27983147_10108339023656590_6739661971660958992_o.jpg?_nc_cat=103&_nc_ht=scontent-atl3-1.xx&oh=49514d5055de539252cf5abe019f5ec6&oe=5D20412B"
-            alt="Thac Ban Gioc"
-          />
-
+          <img src={ThacBanGioc} alt="Thac Ban Gioc" />
           <Media.Body className="">
             <div className="text-center">
               <h3>
@@ -187,59 +180,10 @@ const About = () => {
               </em>
               , skiing/snowboarding, SCUBA diving, bouldering, yoga,
               running/races */}
-              {/* Quia unde molestias. Itaque laboriosam perferendis. Sit nihil
-              molestiae voluptatem expedita nihil reprehenderit. Reprehenderit
-              repudiandae eaque ex rerum qui. Illo fugit quia id aut veniam modi
-              aut. Sit molestiae vel mollitia alias totam quis. Omnis odit
-              voluptatem et sed dolores cupiditate veniam qui. Qui odit corrupti
-              voluptatum ut voluptatem illo debitis. Eos odit illo
-              necessitatibus sit laborum sit. Ab aut mollitia ad ullam sit. Et
-              aut possimus inventore quod quia possimus magnam facere. Nobis
-              tenetur qui enim blanditiis ut eligendi. Sit consequuntur itaque
-              eaque ut ipsum dolores quaerat. Dolores quam perspiciatis facilis
-              ut debitis. */}
             </p>
             <p>
-              I have free climbed waterfalls, hiked through rainforests, kite
-              surfed in the Gulf of Thailand, SCUBA dived in Thailand, the
-              Carribean, and the US.
-            </p>
-          </Media.Body>
-        </Media>
-      </Row>
-      <Row className="justify-content-center mb-5 col-12">
-        <Media className="about-block border rounded  ">
-          <img
-            src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/1012871_10103074023608890_1497890629_n.jpg?_nc_cat=104&_nc_ht=scontent-atl3-1.xx&oh=6269ee30dac1c9e0f8fa5267c2ee16ef&oe=5D131FCC"
-            alt="IT Manager"
-          />
-
-          <Media.Body className="">
-            <div className="text-center">
-              <h3>
-                IT Operations Manager
-                {/* <span role="img" aria-label="Man Office Worker emoji">
-                👨‍💼
-              </span> */}
-              </h3>
-            </div>
-            <p>
-              After graduation, I managed the IT operations of a healthcare
-              management startup for 3 years. During that time, I also served as
-              the director for digital marketing, and an interim office manager
-              for 4 locations and 50 employees.
-              {/* Major projects/accomplishments, starting and ending points
-              (accomplishment), technologies, lessons learned */}
-              {/* Est provident perspiciatis non voluptate molestias omnis
-              laudantium nesciunt est. Saepe laudantium eum quos excepturi.
-              Asperiores numquam doloribus qui qui consequatur ratione. Nihil
-              assumenda eaque nemo officia. */}
-            </p>
-            <p>
-              As it was a startup, we "built the plane as we flew" and converted
-              an outdated network into a resilient, scalable, and secure network
-              using a nearly full-mesh MPLS/VPN WAN, colocated and virtualized
-              servers, and primarily thin-cliient devices.
+              I enjoy a good thrill and free climbed waterfalls, hiked through
+              rainforests, SCUBA dived, and kite surfed in the Gulf of Thailand.
             </p>
           </Media.Body>
         </Media>
