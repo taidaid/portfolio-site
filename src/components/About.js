@@ -3,6 +3,8 @@ import { Container, Row, Media } from "react-bootstrap";
 import WaterfallClimb from "../assets/Waterfall-Climb.jpg";
 import NPCLogo from "../assets/NPC-Logo.jpg";
 import ThacBanGioc from "../assets/Thac Ban Gioc Vietnam.jpg";
+import WebDeveloperPhoto from "../assets/WebDeveloperPhoto.jpg";
+import EducatorImage from "../assets/EducatorImage.png";
 
 const About = () => {
   return (
@@ -63,7 +65,7 @@ const About = () => {
 
       <Row className="justify-content-center mb-5 col-12">
         <Media className="about-block border border-white rounded  ">
-          <img src="https://i.imgur.com/8Y3a0AJl.jpg" alt="Bryan Windsor" />
+          <img src={WebDeveloperPhoto} alt="Bryan Windsor" />
           <Media.Body className=" ">
             <div className=" text-center ">
               <h3>
@@ -88,10 +90,7 @@ const About = () => {
 
       <Row className="justify-content-center mb-5 col-12">
         <Media className="about-block border border-white rounded  ">
-          <img
-            src="https://gtelocalize.com/wp-content/uploads/2018/06/Icon-co-GTE-14.png"
-            alt="English-Chinese"
-          />
+          <img src={EducatorImage} alt="English-Chinese" />
           <Media.Body className="">
             <div className="text-center">
               <h3>
