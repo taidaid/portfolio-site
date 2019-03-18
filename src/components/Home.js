@@ -7,8 +7,8 @@ import "../App.css";
 const Home = () => {
   return (
     <Container fluid className="Home">
-      <Row>
-        <Col md={{ span: 9, offset: 1 }}>
+      <Row className="justify-content-center col-12 p-3">
+        <Col className="col-8">
           <div>
             <h1>
               Hello World.

@@ -10,19 +10,6 @@ const NavbarComponent = props => {
     color = "black";
   }
   return (
-    // <Nav variant="pills" defaultActiveKey="/home">
-    //   <Nav.Item>
-    //     <Nav.Link eventKey="/about">about</Nav.Link>
-    //   </Nav.Item>
-    //   <Nav.Item>
-    //     <Nav.Link eventKey="link-1">Option 2</Nav.Link>
-    //   </Nav.Item>
-    //   <Nav.Item>
-    //     <Nav.Link eventKey="disabled" disabled>
-    //       Disabled
-    //     </Nav.Link>
-    //   </Nav.Item>
-    // </Nav>
     <Navbar bg={props.bg} variant={props.bg} fixed="top">
       <Nav className="mr-auto" variant="pills">
         <Link to="/">

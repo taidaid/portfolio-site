@@ -15,7 +15,40 @@ const About = () => {
           </p>
         </div>
       </Row>
-
+      <Row className="justify-content-center mb-5 col-12">
+        <Media className="about-block border border-white rounded p-3 col-8">
+          <img src="https://i.imgur.com/8Y3a0AJl.jpg" alt="Bryan Windsor" />
+          <Media.Body className="pl-4 ">
+            <div className="pr-4">
+              <h3>
+                Aspiring Polymath
+                {/* <span role="img" aria-label="Man Technologist emoji">
+                  👨‍💻
+                </span> */}
+              </h3>
+            </div>
+            <p>
+              Ever since I was a child, I have been endlessly curious and
+              persistent in my pursuit of learning. I discovered my passion for
+              language in the 6th grade and began learning French. Since then, I
+              have studied English, Chinese, French, Dutch, German, Portuguese,
+              and Spanish (with varying competency). Programming, Networking,
+              Languages, Athletics
+              {/* Quia unde molestias. Itaque laboriosam perferendis. Sit nihil
+              molestiae voluptatem expedita nihil reprehenderit. Reprehenderit
+              repudiandae eaque ex rerum qui. Illo fugit quia id aut veniam modi
+              aut. Sit molestiae vel mollitia alias totam quis. Omnis odit
+              voluptatem et sed dolores cupiditate veniam qui. Qui odit corrupti
+              voluptatum ut voluptatem illo debitis. Eos odit illo
+              necessitatibus sit laborum sit. Ab aut mollitia ad ullam sit. Et
+              aut possimus inventore quod quia possimus magnam facere. Nobis
+              tenetur qui enim blanditiis ut eligendi. Sit consequuntur itaque
+              eaque ut ipsum dolores quaerat. Dolores quam perspiciatis facilis
+              ut debitis. */}
+            </p>
+          </Media.Body>
+        </Media>
+      </Row>
       <Row className="justify-content-center mb-5 col-12">
         <Media className="about-block border border-white rounded p-3 col-8">
           <img src="https://i.imgur.com/8Y3a0AJl.jpg" alt="Bryan Windsor" />
@@ -29,12 +62,12 @@ const About = () => {
               </h3>
             </div>
             <p>
-              {/* I began programming in Java over 10 years ago as part of my degree
+              I began programming in Java over 10 years ago as part of my degree
               in Management Information Systems. After graduation, I managed IT
               operations including, system and network administration, security,
               strategy, and compliance, and found scripting to be an invaluable
-              tool. */}
-              Quia unde molestias. Itaque laboriosam perferendis. Sit nihil
+              tool.
+              {/* Quia unde molestias. Itaque laboriosam perferendis. Sit nihil
               molestiae voluptatem expedita nihil reprehenderit. Reprehenderit
               repudiandae eaque ex rerum qui. Illo fugit quia id aut veniam modi
               aut. Sit molestiae vel mollitia alias totam quis. Omnis odit
@@ -44,7 +77,7 @@ const About = () => {
               aut possimus inventore quod quia possimus magnam facere. Nobis
               tenetur qui enim blanditiis ut eligendi. Sit consequuntur itaque
               eaque ut ipsum dolores quaerat. Dolores quam perspiciatis facilis
-              ut debitis.
+              ut debitis. */}
             </p>
           </Media.Body>
         </Media>
@@ -65,11 +98,16 @@ const About = () => {
               </h3>
             </div>
             <p>
-              {/* Working in Chinese and general skill for instruction/documentation */}
-              Est provident perspiciatis non voluptate molestias omnis
+              My journey to becoming an educator began with learning Mandarin
+              Chinese. I have always loved studying languages and to achieve
+              fluency in Mandarin, I attended one of the most prestigious
+              Mandarin training insitutions in the world, the Mandarin Traning
+              Center at National Taiwan Normal University. While there, I began
+              teaching English to Taiwanese children and found that I loved it!
+              {/* Est provident perspiciatis non voluptate molestias omnis
               laudantium nesciunt est. Saepe laudantium eum quos excepturi.
               Asperiores numquam doloribus qui qui consequatur ratione. Nihil
-              assumenda eaque nemo officia.
+              assumenda eaque nemo officia. */}
             </p>
           </Media.Body>
         </Media>
@@ -94,25 +132,26 @@ const About = () => {
               </h3>
             </div>
             <p>
-              {/* Sports */}
-              Est provident perspiciatis non voluptate molestias omnis
+              Running, Hiking, Rowing, Lifting, Yoga, Climbing
+              {/* Est provident perspiciatis non voluptate molestias omnis
               laudantium nesciunt est. Saepe laudantium eum quos excepturi.
               Asperiores numquam doloribus qui qui consequatur ratione. Nihil
-              assumenda eaque nemo officia.
+              assumenda eaque nemo officia. */}
             </p>
             <p>
-              {/* Reading history/sci-fi */}
-              Est provident perspiciatis non voluptate molestias omnis
+              Avid sci-fi and epic fantasy reader. Enjoy reading classics,
+              especially from other cultures.
+              {/* Est provident perspiciatis non voluptate molestias omnis
               laudantium nesciunt est. Saepe laudantium eum quos excepturi.
               Asperiores numquam doloribus qui qui consequatur ratione. Nihil
-              assumenda eaque nemo officia.
+              assumenda eaque nemo officia. */}
             </p>
             <p>
               {/* Languages */}
-              Est provident perspiciatis non voluptate molestias omnis
+              {/* Est provident perspiciatis non voluptate molestias omnis
               laudantium nesciunt est. Saepe laudantium eum quos excepturi.
               Asperiores numquam doloribus qui qui consequatur ratione. Nihil
-              assumenda eaque nemo officia.
+              assumenda eaque nemo officia. */}
             </p>
           </Media.Body>
         </Media>
@@ -137,13 +176,18 @@ const About = () => {
               </h3>
             </div>
             <p>
+              While learning Mandarin in Taiwan, I had the opportunity to
+              explore Southeast Asia. I visited Vietnam, Cambodia, Thailand,
+              Japan, Singapore, and Malaysia while there. In total, I have
+              visited more than 12 countries outside of Europe and 8 countries
+              within.
               {/* <em>
                 Traveling Asia/Europe, living in China, Taiwan, Vietnam,
                 Netherlands
               </em>
               , skiing/snowboarding, SCUBA diving, bouldering, yoga,
               running/races */}
-              Quia unde molestias. Itaque laboriosam perferendis. Sit nihil
+              {/* Quia unde molestias. Itaque laboriosam perferendis. Sit nihil
               molestiae voluptatem expedita nihil reprehenderit. Reprehenderit
               repudiandae eaque ex rerum qui. Illo fugit quia id aut veniam modi
               aut. Sit molestiae vel mollitia alias totam quis. Omnis odit
@@ -153,7 +197,12 @@ const About = () => {
               aut possimus inventore quod quia possimus magnam facere. Nobis
               tenetur qui enim blanditiis ut eligendi. Sit consequuntur itaque
               eaque ut ipsum dolores quaerat. Dolores quam perspiciatis facilis
-              ut debitis.
+              ut debitis. */}
+            </p>
+            <p>
+              I have free climbed waterfalls, hiked through rainforests, kite
+              surfed in the Gulf of Thailand, SCUBA dived in Thailand, the
+              Carribean, and the US.
             </p>
           </Media.Body>
         </Media>
@@ -175,12 +224,22 @@ const About = () => {
               </h3>
             </div>
             <p>
+              After graduation, I managed the IT operations of a healthcare
+              management startup for 3 years. During that time, I also served as
+              the director for digital marketing, and an interim office manager
+              for 4 locations and 50 employees.
               {/* Major projects/accomplishments, starting and ending points
               (accomplishment), technologies, lessons learned */}
-              Est provident perspiciatis non voluptate molestias omnis
+              {/* Est provident perspiciatis non voluptate molestias omnis
               laudantium nesciunt est. Saepe laudantium eum quos excepturi.
               Asperiores numquam doloribus qui qui consequatur ratione. Nihil
-              assumenda eaque nemo officia.
+              assumenda eaque nemo officia. */}
+            </p>
+            <p>
+              As it was a startup, we "built the plane as we flew" and converted
+              an outdated network into a resilient, scalable, and secure network
+              using a nearly full-mesh MPLS/VPN WAN, colocated and virtualized
+              servers, and primarily thin-cliient devices.
             </p>
           </Media.Body>
         </Media>
