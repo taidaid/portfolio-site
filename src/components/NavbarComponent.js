@@ -11,7 +11,7 @@ const NavbarComponent = props => {
   }
   return (
     <Navbar bg={props.bg} variant={props.bg} fixed="top">
-      <Nav className="mr-auto" variant="pills">
+      <Nav variant="pills">
         <Link to="/">
           <img
             src="https://i.imgur.com/kdRv3qa.png"
@@ -21,19 +21,15 @@ const NavbarComponent = props => {
           />
         </Link>
 
-        <Nav.Item>
-          <Nav.Link>
-            <Link className="textLink" to="/about" style={{ color: color }}>
-              about
-            </Link>
-          </Nav.Link>
+        <Nav.Item className="m-auto">
+          <Link className="textLink" to="/about" style={{ color: color }}>
+            about
+          </Link>
         </Nav.Item>
-        <Nav.Item>
-          <Nav.Link>
-            <Link className="textLink" to="/portfolio" style={{ color: color }}>
-              portfolio
-            </Link>
-          </Nav.Link>
+        <Nav.Item className="m-auto">
+          <Link className="textLink" to="/portfolio" style={{ color: color }}>
+            portfolio
+          </Link>
         </Nav.Item>
       </Nav>
     </Navbar>

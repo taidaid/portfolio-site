@@ -1,23 +1,19 @@
 import React from "react";
 import TextLoop from "react-text-loop";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import "../App.css";
 
 const Home = () => {
   return (
-    <Container fluid>
+    <Container fluid className="align-items-center">
       <Row className="col-12 justify-content-center">
         <div className="Home">
           <div>
             <h1>
               Hello World.
               <br />I am Bryan Windsor,{" "}
-              <TextLoop
-                noWrap={
-                  document.documentElement.clientWidth <= 768 ? true : false
-                }
-              >
+              <TextLoop>
                 <div>a software developer.</div>
                 <div>a world traveler.</div>
                 <div>an educator.</div>

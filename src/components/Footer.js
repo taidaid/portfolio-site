@@ -5,8 +5,8 @@ import GmailLogo from "../assets/Gmail-Mark-32px.png";
 
 const Footer = () => {
   return (
-    <footer className="footer text-center justify-content-center col-12">
-      <div className="d-flex justify-content-center align-items-center">
+    <footer className="footer text-center  col-12">
+      <div className="d-flex justify-content-center ">
         <span>
           <a href="https://www.linkedin.com/in/bryanwindsor/">
             <img className="p-2" src={LinkedinLogo} alt="Linkedin Profile" />

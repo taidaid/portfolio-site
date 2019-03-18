@@ -29,16 +29,24 @@
 .footer {
   flex-flow: row;
   width: 100%;
+  margin: auto;
 }
 
 .navbar-nav {
   font-size: 1.5rem;
 }
 
+.textLink {
+  padding: 0.5rem;
+}
+
 .container-fluid {
   display: flex;
   flex-flow: column;
   margin: calc(60px + 1rem) 0;
+}
+
+.Home {
   padding-top: 10vh;
 }
 
@@ -82,6 +90,9 @@ a:hover {
 
 /* Small screen styles, width is set to iPhoneX width*/
 @media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
   .about-block,
   .about-header,
   .footer {
@@ -100,6 +111,11 @@ a:hover {
     font-size: 12px;
     overflow: hidden;
     width: 100%;
+  }
+
+  .x5,
+  .x6 {
+    white-space: normal;
   }
 }
 
@@ -131,8 +147,5 @@ a:hover {
 
   .Home {
     width: 66%;
-  }
-
-  .project-block {
   }
 }
