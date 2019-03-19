@@ -55,6 +55,23 @@
   padding-top: 10vh;
 }
 
+.Home img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.Home .media {
+  border-top: 1px solid lightgray;
+}
+
+.introduction {
+  margin: 20vh auto;
+}
+
+.testimonial {
+  margin: 5vh auto;
+}
+
 .About > .row:nth-child(even) .media {
   background-color: rgb(32, 32, 32);
 }

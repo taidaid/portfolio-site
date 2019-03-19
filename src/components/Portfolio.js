@@ -1,6 +1,10 @@
 import React from "react";
 import { Container, Row, Media } from "react-bootstrap";
 import GitHubLogo from "../assets/GitHub-Mark-32px.png";
+import FaceDetectImage from "../assets/Face-Detect-Capture.PNG";
+import BillsTrackerImage from "../assets/bills-tracker-capture.PNG";
+import RoboFriendsImage from "../assets/Robofriends-capture.png";
+import PixelArtImage from "../assets/pixel-art-capture.PNG";
 
 const Portfolio = () => {
   return (
@@ -23,10 +27,7 @@ const Portfolio = () => {
         <Media className="project-block" id="project-1 align-items-center">
           <div className="media-image">
             <a href="https://protected-taiga-22940.herokuapp.com/">
-              <img
-                src="https://i.imgur.com/NKhhycNl.png "
-                alt="Face Detection App"
-              />
+              <img src={FaceDetectImage} alt="Face Detection App" />
             </a>
           </div>
           <Media.Body className="project-body">
@@ -44,7 +45,7 @@ const Portfolio = () => {
         <Media className="project-block" id="project-2">
           <div className="media-image">
             <a href="https://stormy-sands-35736.herokuapp.com/">
-              <img src="https://i.imgur.com/iPD9xtjl.png" alt="Pixel Art App" />
+              <img src={BillsTrackerImage} alt="Pixel Art App" />
             </a>
           </div>
           <Media.Body className="project-body" id="project-2">
@@ -62,10 +63,7 @@ const Portfolio = () => {
         <Media className="project-block" id="project-3">
           <div className="media-image">
             <a href="https://pacific-hollows-60748.herokuapp.com/">
-              <img
-                src="https://i.imgur.com/Q8b3DKFl.png"
-                alt="Bills Tracker App"
-              />
+              <img src={RoboFriendsImage} alt="Bills Tracker App" />
             </a>
           </div>
           <Media.Body className="project-body" id="project-2">
@@ -83,10 +81,7 @@ const Portfolio = () => {
         <Media className="project-block" id="project-2">
           <div className="media-image">
             <a href="https://aqueous-hamlet-47886.herokuapp.com/">
-              <img
-                src="https://i.imgur.com/ws8m84pl.png"
-                alt="Robofriends w/Redux App"
-              />
+              <img src={PixelArtImage} alt="Robofriends w/Redux App" />
             </a>
           </div>
           <Media.Body className="project-body" id="project-2">
