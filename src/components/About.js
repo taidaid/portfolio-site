@@ -22,7 +22,7 @@ const About = () => {
       </Row>
 
       <Row className="justify-content-center mb-5 col-12">
-        <Media className="about-block border border-white rounded  ">
+        <Media className="about-block border border-white rounded">
           <img src={WaterfallClimb} alt="Waterfall Climb" />
           <Media.Body className=" ">
             <div className="text-center">
@@ -64,7 +64,7 @@ const About = () => {
       </Row>
 
       <Row className="justify-content-center mb-5 col-12">
-        <Media className="about-block border border-white rounded  ">
+        <Media className="about-block border rounded  ">
           <img src={WebDeveloperPhoto} alt="Bryan Windsor" />
           <Media.Body className=" ">
             <div className=" text-center ">

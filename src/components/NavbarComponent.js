@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 
 const NavbarComponent = props => {
   let color = "white";
-  if (props.bg === "dark") {
-    color = "lightgrey";
-  } else {
-    color = "black";
-  }
+
   return (
     <Navbar fixed="top">
       <Nav variant="pills">
@@ -22,12 +18,12 @@ const NavbarComponent = props => {
         </Link>
 
         <Nav.Item className="m-auto">
-          <Link className="textLink" to="/about" style={{ color: color }}>
+          <Link className="textLink" to="/about">
             about
           </Link>
         </Nav.Item>
         <Nav.Item className="m-auto">
-          <Link className="textLink" to="/portfolio" style={{ color: color }}>
+          <Link className="textLink" to="/portfolio">
             portfolio
           </Link>
         </Nav.Item>

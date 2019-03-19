@@ -34,6 +34,7 @@
 
 .navbar {
   background-color: rgb(32, 32, 32);
+  color: white;
 }
 
 .navbar-nav {
@@ -98,12 +99,14 @@ a:hover {
   .navbar {
     padding: 0.5rem 0;
   }
+
   .about-block,
   .about-header,
   .footer {
     width: 100%;
     padding: 0;
   }
+
   .about-block > img {
     display: none;
   }
