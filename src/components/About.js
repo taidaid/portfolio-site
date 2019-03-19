@@ -81,7 +81,7 @@ const About = () => {
               applications using the LAMP stack. After graduation, I utilized
               PowerShell and SQL for scripting and reporting as a part of my job
               duties. Since then I have become deeply familiar with the MERN
-              stack,including React.js, Redux, JavaScript, HTML/CSS, Bootstrap,
+              stack, including React.js, Redux, JavaScript, HTML/CSS, Bootstrap,
               Node.js, Express, PostgreSQL, and MongoDB.
             </p>
           </Media.Body>
@@ -181,8 +181,9 @@ const About = () => {
               running/races */}
             </p>
             <p>
-              I enjoy a good thrill and free climbed waterfalls, hiked through
-              rainforests, SCUBA dived, and kite surfed in the Gulf of Thailand.
+              I enjoy a good thrill and have free climbed waterfalls, hiked
+              through rainforests, SCUBA dived, and kite surfed in the Gulf of
+              Thailand.
             </p>
           </Media.Body>
         </Media>

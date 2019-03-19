@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Media } from "react-bootstrap";
+import GitHubLogo from "../assets/GitHub-Mark-32px.png";
 
 const Portfolio = () => {
   return (
@@ -19,7 +20,7 @@ const Portfolio = () => {
         </Media>
       </Row>
       <Row className="justify-content-center col-12 ">
-        <Media className="project-block" id="project-1 justify-content-center">
+        <Media className="project-block" id="project-1 align-items-center">
           <div className="media-image">
             <a href="https://protected-taiga-22940.herokuapp.com/">
               <img
@@ -31,6 +32,11 @@ const Portfolio = () => {
           <Media.Body className="project-body">
             <h2>Face Detection</h2>
             <p>Detects faces in pictures, built with React and Tachyons</p>
+            <p>
+              <a href="https://github.com/taidaid/face-detection">
+                <img src={GitHubLogo} alt="Source code" />
+              </a>
+            </p>
           </Media.Body>
         </Media>
       </Row>
@@ -44,6 +50,11 @@ const Portfolio = () => {
           <Media.Body className="project-body" id="project-2">
             <h2>Pixel Art</h2>
             <p>Draw pictures by filling large pixels, built with React</p>
+            <p>
+              <a href="https://github.com/taidaid/pixelart-react">
+                <img src={GitHubLogo} alt="Source code" />
+              </a>
+            </p>
           </Media.Body>
         </Media>
       </Row>
@@ -60,6 +71,11 @@ const Portfolio = () => {
           <Media.Body className="project-body" id="project-2">
             <h2>Bills Tracker</h2>
             <p>Record, categorize, and chart bills, built with React</p>
+            <p>
+              <a href="https://github.com/taidaid/bills-tracker">
+                <img src={GitHubLogo} alt="Source code" />
+              </a>
+            </p>
           </Media.Body>
         </Media>
       </Row>
@@ -76,6 +92,11 @@ const Portfolio = () => {
           <Media.Body className="project-body" id="project-2">
             <h2>Robofriends w/Redux</h2>
             <p>Fetch users data and search by name, built with React + Redux</p>
+            <p>
+              <a href="https://github.com/taidaid/robofriends">
+                <img src={GitHubLogo} alt="Source code" />
+              </a>
+            </p>
           </Media.Body>
         </Media>
       </Row>
