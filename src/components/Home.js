@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import TextLoop from "react-text-loop";
 import ProfilePhoto from "../assets/profile-photo-2.jpg";
 import { Container, Row, Media } from "react-bootstrap";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "../App.css";
 
 const Home = () => {
   const [expandFirst, setExpandFirst] = useState(false);
   const [expandSecond, setExpandSecond] = useState(false);
-  const [expandThird, setExpandThird] = useState(false);
+
   return (
     <Container fluid className="align-items-center">
       <Row className="col-12 justify-content-center">
@@ -29,6 +30,7 @@ const Home = () => {
               </TextLoop>
             </h1>
           </div>
+
           <Media className="introduction">
             <div className="col-3">
               <img src={ProfilePhoto} alt="Bryan Windsor" />
@@ -41,12 +43,12 @@ const Home = () => {
               </p>
             </Media.Body>
           </Media>
+
           <Media className="testimonial">
             <div className="col-3">
               <h5>John Whaley</h5>
               <p>National Pain Care</p>
             </div>
-
             <Media.Body className="col-9">
               <p onClick={() => setExpandFirst(!expandFirst)}>
                 <p>
@@ -57,16 +59,20 @@ const Home = () => {
                   Windsor’s positive attitude, quest for knowledge, and
                   maturity. <em>{expandFirst ? "" : "Read more..."}</em>
                 </p>
-                <p>
-                  {expandFirst
-                    ? `Mr. Windsor designed the information technology infrastructure
+                <TransitionGroup>
+                  <CSSTransition classNames="fade" timeout={300}>
+                    <p>
+                      {expandFirst
+                        ? `Mr. Windsor designed the information technology infrastructure
                 for the entire Company’s multiple locations. After the design
                 stage was complete, he interacted with the vendors for the
                 equipment purchases and the engineers and technicians for the
                 implementation of the plan. The success of the project was
                 instrumental in the Organization achieving its growth plans.`
-                    : ""}
-                </p>
+                        : ""}
+                    </p>
+                  </CSSTransition>
+                </TransitionGroup>
 
                 <p>
                   {expandFirst
@@ -82,12 +88,12 @@ const Home = () => {
               <p />
             </Media.Body>
           </Media>
+
           <Media className="testimonial">
             <div className="col-3">
               <h5>Ryan Harrington</h5>
               <p>Import Export Specialist</p>
             </div>
-
             <Media.Body className="col-9">
               <p onClick={() => setExpandSecond(!expandSecond)}>
                 Bryan spent 3 years as a teacher for Head Start English School
@@ -107,21 +113,20 @@ const Home = () => {
               </p>
             </Media.Body>
           </Media>
+
           <Media className="testimonial">
             <div className="col-3">
               <h5>Todd Pennington</h5>
               <p>Strategic Account Manager</p>
             </div>
-
             <Media.Body className="col-9">
-              <p onClick={() => setExpandThird(!expandThird)}>
+              <p>
                 I have known Bryan for close to a year as our companies have
                 partnered on numerous technology projects and service
                 enhancements. Bryan is extremely professional. He knows the
                 inner workings of his business and has a strong work-ethic, not
                 to mention a level of interest in technology that is far above
-                others in similar roles.{" "}
-                <em>{expandThird ? "Read more..." : ""}</em>
+                others in similar roles.
               </p>
             </Media.Body>
           </Media>
