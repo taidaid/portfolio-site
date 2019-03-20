@@ -84,7 +84,7 @@ a:hover {
 }
 
 .introduction {
-  margin: 10vh auto;
+  margin: 5vh auto;
 }
 
 .testimonial {
@@ -116,7 +116,7 @@ a:hover {
 }
 
 /* Small screen styles, width is set to iPhoneX width*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .navbar {
     padding: 0.5rem 0;
   }
@@ -142,6 +142,10 @@ a:hover {
     width: 100%;
   }
 
+  .media {
+    width: 100%;
+  }
+
   .x5,
   .x6 {
     white-space: normal;
@@ -149,7 +153,7 @@ a:hover {
 }
 
 /* Large screen styles */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   /* Custom styling on top of Bootstrap*/
   .about-block,
   .about-header {
