@@ -26,6 +26,31 @@
 
 /* Custom styling over Bootsrap*/
 
+.navbar .textLink {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container-fluid {
+  display: flex;
+  flex-flow: column;
+  margin: calc(60px + 1rem) 0;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.media {
+  padding: 1rem 0;
+  align-items: center;
+}
+
+.media-body {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
 .footer {
   flex-flow: row;
   width: 100%;
@@ -41,16 +66,6 @@
   font-size: 1.5rem;
 }
 
-.textLink {
-  padding: 0.5rem;
-}
-
-.container-fluid {
-  display: flex;
-  flex-flow: column;
-  margin: calc(60px + 1rem) 0;
-}
-
 .Home {
   padding-top: 10vh;
 }
@@ -60,12 +75,16 @@
   max-width: 100%;
 }
 
+.Home a {
+  color: inherit;
+}
+
 .Home .media {
   border-top: 1px solid lightgray;
 }
 
 .introduction {
-  margin: 20vh auto;
+  margin: 10vh auto;
 }
 
 .testimonial {
@@ -94,24 +113,6 @@
 
 .About img {
   width: 15vw;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  color: inherit;
-}
-
-.media {
-  padding: 1rem 0;
-  align-items: center;
-}
-
-.media-body {
-  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 /* Small screen styles, width is set to iPhoneX width*/

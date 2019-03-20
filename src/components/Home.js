@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import TextLoop from "react-text-loop";
 import ProfilePhoto from "../assets/profile-photo-2.jpg";
+import { Link } from "react-router-dom";
 import { Container, Row, Media } from "react-bootstrap";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "../App.css";
 
 const Home = () => {
   const [expandFirst, setExpandFirst] = useState(false);
   const [expandSecond, setExpandSecond] = useState(false);
+  const [expandThird, setExpandThird] = useState(false);
 
   return (
     <Container fluid className="align-items-center">
@@ -30,7 +31,6 @@ const Home = () => {
               </TextLoop>
             </h1>
           </div>
-
           <Media className="introduction">
             <div className="col-3">
               <img src={ProfilePhoto} alt="Bryan Windsor" />
@@ -38,7 +38,14 @@ const Home = () => {
             <Media.Body className="col-9">
               <p>
                 I am a freelance React developer from Atlanta, USA. To learn
-                more about me, please click 'About' at the top or 'Portfolios'
+                more about me, please click{" "}
+                <Link className="textLink" to="/about">
+                  'about',
+                </Link>{" "}
+                or{" "}
+                <Link className="textLink" to="/portfolio">
+                  'portfolio'
+                </Link>{" "}
                 to see some of my work.
               </p>
             </Media.Body>
@@ -59,20 +66,16 @@ const Home = () => {
                   Windsor’s positive attitude, quest for knowledge, and
                   maturity. <em>{expandFirst ? "" : "Read more..."}</em>
                 </p>
-                <TransitionGroup>
-                  <CSSTransition classNames="fade" timeout={300}>
-                    <p>
-                      {expandFirst
-                        ? `Mr. Windsor designed the information technology infrastructure
+                <p>
+                  {expandFirst
+                    ? `Mr. Windsor designed the information technology infrastructure
                 for the entire Company’s multiple locations. After the design
                 stage was complete, he interacted with the vendors for the
                 equipment purchases and the engineers and technicians for the
                 implementation of the plan. The success of the project was
                 instrumental in the Organization achieving its growth plans.`
-                        : ""}
-                    </p>
-                  </CSSTransition>
-                </TransitionGroup>
+                    : ``}
+                </p>
 
                 <p>
                   {expandFirst
@@ -81,14 +84,11 @@ const Home = () => {
                 academic program. I can also attest to Mr. Windsor’s ethical and
                 moral character. He has a very approachable personality and
                 works well with others.`
-                    : ""}
+                    : ``}
                 </p>
               </p>
-
-              <p />
             </Media.Body>
           </Media>
-
           <Media className="testimonial">
             <div className="col-3">
               <h5>Ryan Harrington</h5>
@@ -109,11 +109,32 @@ const Home = () => {
                 training or supervision as he understood and executed his
                 position with excellence. Bryan left this position when he moved
                 away from Taiwan. He would certainly be welcomed back.`
-                  : ""}
+                  : ``}
               </p>
             </Media.Body>
           </Media>
 
+          <Media className="testimonial">
+            <div className="col-3">
+              <h5>Alex Levitt</h5>
+              <p>Consultant, Applied Behavioral Science</p>
+            </div>
+            <Media.Body className="col-9">
+              <p onClick={() => setExpandThird(!expandThird)}>
+                Bryan and I have worked on several React and JavaScript
+                applications within the last year. He’s been an excellent coding
+                collaborator and a strong communicator. He’s someone who truly
+                loves to learn, and his ability to quickly grasp, implement,
+                explore and debug new technologies has impressed me many times.{" "}
+                <em>{expandThird ? "" : "Read more..."}</em>
+                {expandThird
+                  ? `He’s highly motivated,
+          technically inclined, and his drive and dedication to goals are an
+          asset to any project he’s a part of.`
+                  : ``}
+              </p>
+            </Media.Body>
+          </Media>
           <Media className="testimonial">
             <div className="col-3">
               <h5>Todd Pennington</h5>
