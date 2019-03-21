@@ -91,6 +91,10 @@ a:hover {
   margin: 5vh auto;
 }
 
+.testimonial-header {
+  width: 33%;
+}
+
 .About > .row:nth-child(even) .media {
   background-color: rgb(32, 32, 32);
 }
@@ -111,23 +115,47 @@ a:hover {
   border: 1px solid black;
 }
 
-.About img {
+.About div > img {
   width: 15vw;
 }
 
-/* .about-block,
-  .about-header {
-    padding: 0rem;
-  } */
+.intro-image {
+  width: 15vw;
+}
 
 /* Small screen styles, width is set to iPhoneX width*/
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 1024px) {
   .navbar {
     padding: 0.5rem 0;
   }
 
+  .testimonial {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+  .testimonial-header {
+    order: 2;
+    padding: 0 1.5rem;
+  }
+  .media-body {
+    padding: 0 auto;
+  }
+  .introduction {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
+  .intro-image {
+    order: 2;
+    width: 25vw;
+  }
+  .introduction {
+    margin-bottom: 0;
+  }
   .about-block,
-  .about-header,
   .footer {
     width: 100%;
     padding: 0;
@@ -158,7 +186,7 @@ a:hover {
 }
 
 /* Large screen styles */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   /* Custom styling on top of Bootstrap*/
   /* .about-block,
   .about-header {
@@ -166,7 +194,6 @@ a:hover {
   } */
 
   .about-block,
-  .about-header,
   .footer {
     width: 66%;
     padding: 0 2rem;

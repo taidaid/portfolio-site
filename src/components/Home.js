@@ -32,10 +32,10 @@ const Home = () => {
             </h1>
           </div>
           <Media className="introduction">
-            <div className="col-3">
+            <div className="intro-image">
               <img src={ProfilePhoto} alt="Bryan Windsor" />
             </div>
-            <Media.Body className="col-9">
+            <Media.Body className="testimonial-body">
               <p>
                 I am a freelance React developer from Atlanta, USA. To learn
                 more about me, please click{" "}
@@ -52,11 +52,11 @@ const Home = () => {
           </Media>
 
           <Media className="testimonial">
-            <div className="col-3">
+            <div className="testimonial-header">
               <h5>John Whaley</h5>
               <p>Executive Vice President</p>
             </div>
-            <Media.Body className="col-9">
+            <Media.Body className="testimonial-body">
               <p onClick={() => setExpandFirst(!expandFirst)}>
                 <p>
                   As the Executive Vice President of a growing company, I had
@@ -91,11 +91,11 @@ const Home = () => {
           </Media>
 
           <Media className="testimonial">
-            <div className="col-3">
+            <div className="testimonial-header">
               <h5>Alex Levitt</h5>
               <p>Consultant, Applied Behavioral Science</p>
             </div>
-            <Media.Body className="col-9">
+            <Media.Body className="testimonial-body">
               <p onClick={() => setExpandThird(!expandThird)}>
                 Bryan and I have worked on several React and JavaScript
                 applications within the last year. He’s been an excellent coding
@@ -113,11 +113,11 @@ const Home = () => {
           </Media>
 
           <Media className="testimonial">
-            <div className="col-3">
+            <div className="testimonial-header">
               <h5>Ryan Harrington</h5>
               <p>Senior Teacher</p>
             </div>
-            <Media.Body className="col-9">
+            <Media.Body className="testimonial-body">
               <p onClick={() => setExpandSecond(!expandSecond)}>
                 Bryan spent 3 years as a teacher for Head Start English School
                 in Taipei, Taiwan. He was well liked and respected by his
@@ -138,11 +138,11 @@ const Home = () => {
           </Media>
 
           <Media className="testimonial">
-            <div className="col-3">
+            <div className="testimonial-header">
               <h5>Todd Pennington</h5>
               <p>Strategic Account Manager</p>
             </div>
-            <Media.Body className="col-9">
+            <Media.Body className="testimonial-body">
               <p>
                 I have known Bryan for close to a year as our companies have
                 partnered on numerous technology projects and service
