@@ -54,7 +54,7 @@ const Home = () => {
           <Media className="testimonial">
             <div className="col-3">
               <h5>John Whaley</h5>
-              <p>National Pain Care</p>
+              <p>Executive Vice President</p>
             </div>
             <Media.Body className="col-9">
               <p onClick={() => setExpandFirst(!expandFirst)}>
@@ -89,30 +89,6 @@ const Home = () => {
               </p>
             </Media.Body>
           </Media>
-          <Media className="testimonial">
-            <div className="col-3">
-              <h5>Ryan Harrington</h5>
-              <p>Import Export Specialist</p>
-            </div>
-            <Media.Body className="col-9">
-              <p onClick={() => setExpandSecond(!expandSecond)}>
-                Bryan spent 3 years as a teacher for Head Start English School
-                in Taipei, Taiwan. He was well liked and respected by his
-                colleagues and his supervisors. He was extremely self
-                motivating; attending Chinese classes in the morning while
-                teaching afternoons and evenings.{" "}
-                <em>{expandSecond ? "" : "Read more..."}</em>
-                {expandSecond
-                  ? `Bryan was creative and patient
-                with his students. He taught both assigned curriculum as well as
-                classes he developed himself. Bryan required very little
-                training or supervision as he understood and executed his
-                position with excellence. Bryan left this position when he moved
-                away from Taiwan. He would certainly be welcomed back.`
-                  : ``}
-              </p>
-            </Media.Body>
-          </Media>
 
           <Media className="testimonial">
             <div className="col-3">
@@ -135,6 +111,32 @@ const Home = () => {
               </p>
             </Media.Body>
           </Media>
+
+          <Media className="testimonial">
+            <div className="col-3">
+              <h5>Ryan Harrington</h5>
+              <p>Senior Teacher</p>
+            </div>
+            <Media.Body className="col-9">
+              <p onClick={() => setExpandSecond(!expandSecond)}>
+                Bryan spent 3 years as a teacher for Head Start English School
+                in Taipei, Taiwan. He was well liked and respected by his
+                colleagues and his supervisors. He was extremely self
+                motivating; attending Chinese classes in the morning while
+                teaching afternoons and evenings.{" "}
+                <em>{expandSecond ? "" : "Read more..."}</em>
+                {expandSecond
+                  ? `Bryan was creative and patient
+                with his students. He taught both assigned curriculum as well as
+                classes he developed himself. Bryan required very little
+                training or supervision as he understood and executed his
+                position with excellence. Bryan left this position when he moved
+                away from Taiwan. He would certainly be welcomed back.`
+                  : ``}
+              </p>
+            </Media.Body>
+          </Media>
+
           <Media className="testimonial">
             <div className="col-3">
               <h5>Todd Pennington</h5>

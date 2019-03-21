@@ -38,6 +38,10 @@
   margin: calc(60px + 1rem) 0;
 }
 
+a {
+  color: inherit;
+}
+
 a:hover {
   color: inherit;
 }
@@ -75,10 +79,6 @@ a:hover {
   max-width: 100%;
 }
 
-.Home a {
-  color: inherit;
-}
-
 .Home .media {
   border-top: 1px solid lightgray;
 }
@@ -114,6 +114,11 @@ a:hover {
 .About img {
   width: 15vw;
 }
+
+/* .about-block,
+  .about-header {
+    padding: 0rem;
+  } */
 
 /* Small screen styles, width is set to iPhoneX width*/
 @media only screen and (max-width: 769px) {
@@ -155,16 +160,16 @@ a:hover {
 /* Large screen styles */
 @media only screen and (min-width: 769px) {
   /* Custom styling on top of Bootstrap*/
-  .about-block,
+  /* .about-block,
   .about-header {
     padding: 1rem;
-  }
+  } */
 
   .about-block,
   .about-header,
   .footer {
     width: 66%;
-    padding: 1.5rem;
+    padding: 0 2rem;
   }
 
   .media {
