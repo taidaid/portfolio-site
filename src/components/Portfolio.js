@@ -5,6 +5,9 @@ import FaceDetectImage from "../assets/Face-Detect-Capture.PNG";
 import BillsTrackerImage from "../assets/bills-tracker-capture.PNG";
 import RoboFriendsImage from "../assets/Robofriends-capture.png";
 import PixelArtImage from "../assets/pixel-art-capture.PNG";
+import GithubLogo from "../assets/GitHub-Mark-32px.png";
+import LinkedinLogo from "../assets/Linkedin-Mark-32px.png";
+import GmailLogo from "../assets/Gmail-Mark-32px.png";
 
 const Portfolio = () => {
   return (
@@ -16,9 +19,25 @@ const Portfolio = () => {
             <p>
               I'm available to put my skills to work for you! Feel free to
               contact me:{" "}
-              <a href="mailto:windsor.bryan@gmail.com?subject=Developer Opportunity">
-                windsor.bryan@gmail.com
-              </a>
+              <span>
+                <a href="https://www.linkedin.com/in/bryanwindsor/">
+                  <img
+                    className="p-2"
+                    src={LinkedinLogo}
+                    alt="Linkedin Profile"
+                  />
+                </a>
+              </span>
+              <span>
+                <a href="https://github.com/taidaid">
+                  <img className="p-2" src={GithubLogo} alt="Github Profile" />
+                </a>
+              </span>
+              <span>
+                <a href="mailto:windsor.bryan@gmail.com?subject=Developer Opportunity">
+                  <img className="p-2" src={GmailLogo} alt="Gmail" />
+                </a>
+              </span>
             </p>
           </Media.Body>
         </Media>
@@ -32,7 +51,10 @@ const Portfolio = () => {
           </div>
           <Media.Body className="project-body">
             <h2>Face Detection</h2>
-            <p>Detects faces in pictures, built with React and Tachyons</p>
+            <p>
+              Detects faces in pictures. Built with React, Tachyons, and Web
+              Storage API.
+            </p>
             <p>
               <a href="https://github.com/taidaid/face-detection">
                 <img src={GitHubLogo} alt="Source code" />
@@ -50,7 +72,10 @@ const Portfolio = () => {
           </div>
           <Media.Body className="project-body" id="project-2">
             <h2>Pixel Art</h2>
-            <p>Draw pictures by filling large pixels, built with React</p>
+            <p>
+              Draw pictures by filling large pixels. Built with React and Web
+              Storage API.
+            </p>
             <p>
               <a href="https://github.com/taidaid/pixelart-react">
                 <img src={GitHubLogo} alt="Source code" />
@@ -68,7 +93,10 @@ const Portfolio = () => {
           </div>
           <Media.Body className="project-body" id="project-2">
             <h2>Bills Tracker</h2>
-            <p>Record, categorize, and chart bills, built with React</p>
+            <p>
+              Record, categorize, and chart bills. Built with React,
+              React-Router, Chart.js, and Web Storage API.
+            </p>
             <p>
               <a href="https://github.com/taidaid/bills-tracker">
                 <img src={GitHubLogo} alt="Source code" />
@@ -86,7 +114,9 @@ const Portfolio = () => {
           </div>
           <Media.Body className="project-body" id="project-2">
             <h2>Robofriends w/Redux</h2>
-            <p>Fetch users data and search by name, built with React + Redux</p>
+            <p>
+              Fetch users data and search by name. Built with React and Redux.
+            </p>
             <p>
               <a href="https://github.com/taidaid/robofriends">
                 <img src={GitHubLogo} alt="Source code" />

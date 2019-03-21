@@ -5,6 +5,7 @@ import NPCLogo from "../assets/NPC-Logo.jpg";
 import ThacBanGioc from "../assets/Thac Ban Gioc Vietnam.jpg";
 import WebDeveloperPhoto from "../assets/WebDeveloperPhoto.jpg";
 import EducatorImage from "../assets/EducatorImage.png";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -14,9 +15,9 @@ const About = () => {
           <h1>歡迎光臨!</h1>
           <p>
             '歡迎光臨' means 'Welcome' in Chinese. Thanks for visiting my
-            website. My name is Bryan, and I'm 30 years old. If you are
-            interested in finding out more about me, my interests, projects or
-            skills, please browse around.
+            website. If you are interested in finding out more about me, my
+            interests, projects, or skills, please browse around or feel free to{" "}
+            <a href="mailto:windsor.bryan@gmail.com">contact me</a>.
           </p>
         </div>
       </Row>
@@ -82,7 +83,12 @@ const About = () => {
               PowerShell and SQL for scripting and reporting as a part of my job
               duties. Since then I have become deeply familiar with the MERN
               stack, including React.js, Redux, JavaScript, HTML/CSS, Bootstrap,
-              Node.js, Express, PostgreSQL, and MongoDB.
+              Node.js, Express, PostgreSQL, and MongoDB. You can see some of my
+              work in my{" "}
+              <Link className="textLink" to="/portfolio">
+                portfolio
+              </Link>
+              .
             </p>
           </Media.Body>
         </Media>
@@ -133,20 +139,19 @@ const About = () => {
               </h3>
             </div>
             <p>
-              After graduation, I worked for a healthcare management company,
-              National Pain Care. Unfortunately, the company ran into trouble
-              and was finally shut down in 2016. It was an innovative company
-              with hard-working, caring, and intelligent people. I learned a
-              great deal from my colleagues about system design and
+              After graduation, I directed the IT department for a healthcare
+              management company, National Pain Care. It was an innovative
+              company with hard-working, caring, and intelligent people. I
+              learned a great deal from my colleagues about system design and
               administration, personnel and project management, and even radio,
               TV, and digital marketing.
             </p>
             <p>
               I was charged with managing all marketing and IT projects and
               staff. I even functioned as an office manager for 4 locations and
-              50 employees for over 6 months. With my inital goals completed and
-              the demise of the company, I found myself in an excellent position
-              to pursue a lifelong dream, fluent Mandarin.
+              50 employees for over 6 months. With my promises fulfilled,
+              targets reached, and the decline of the company, I found myself in
+              an excellent position to pursue a lifelong dream, fluent Mandarin.
             </p>
           </Media.Body>
         </Media>
