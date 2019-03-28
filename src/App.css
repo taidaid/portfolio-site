@@ -102,11 +102,6 @@ a:hover {
   width: 33%;
 }
 
-/* .testimonial-body {
-  width: 66%;
-  right: 0;
-} */
-
 .About > .row:nth-child(even) .media {
   background-color: rgb(32, 32, 32);
 }
@@ -150,7 +145,7 @@ a:hover {
   }
 
   .dropdown > a {
-    color: rgba(250, 250, 250, 0.7) !important;
+    color: rgba(250, 250, 250) !important;
     right: 0;
   }
 
