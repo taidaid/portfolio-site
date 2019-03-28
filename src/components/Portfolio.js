@@ -5,6 +5,7 @@ import FaceDetectImage from "../assets/Face-Detect-Capture.PNG";
 import BillsTrackerImage from "../assets/bills-tracker-capture.PNG";
 import RoboFriendsImage from "../assets/Robofriends-capture.png";
 import PixelArtImage from "../assets/pixel-art-capture.PNG";
+import StoreCheckoutImage from "../assets/store-checkout-capture.PNG";
 import GithubLogo from "../assets/GitHub-Mark-32px.png";
 import LinkedinLogo from "../assets/Linkedin-Mark-32px.png";
 import GmailLogo from "../assets/Gmail-Mark-32px.png";
@@ -135,7 +136,7 @@ const Portfolio = () => {
         <Media className="project-block" id="project-5">
           <div className="media-image">
             <a href="https://fast-falls-89000.herokuapp.com">
-              <img src={PixelArtImage} alt="Store Checkout App" />
+              <img src={StoreCheckoutImage} alt="Store Checkout App" />
             </a>
           </div>
           <Media.Body className="project-body" id="project-5">
