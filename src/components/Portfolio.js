@@ -17,7 +17,7 @@ const Portfolio = () => {
         <Media className="">
           <Media.Body className="portfolio-header text-center">
             <h2>I'm looking for opportunities!</h2>
-            <p>
+            <div>
               I'm available to put my skills to work for you! Feel free to
               <a href="mailto:windsor.bryan@gmail.com">contact me</a>.
               <div className="contact">
@@ -45,7 +45,7 @@ const Portfolio = () => {
                   </a>
                 </span>
               </div>
-            </p>
+            </div>
           </Media.Body>
         </Media>
       </Row>

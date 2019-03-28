@@ -26,7 +26,7 @@ const Testimonials = () => {
             </p>
           </div>
           <Media.Body className="testimonial-body">
-            <p onClick={() => setExpandFirst(!expandFirst)}>
+            <div onClick={() => setExpandFirst(!expandFirst)}>
               <p>
                 As the Executive Vice President of a growing company, I had the
                 pleasure of working with Mr. Windsor for several years. Mr.
@@ -55,7 +55,7 @@ const Testimonials = () => {
                 works well with others.`
                   : ``}
               </p>
-            </p>
+            </div>
           </Media.Body>
         </Media>
         <Media className="testimonial">
@@ -66,7 +66,7 @@ const Testimonials = () => {
             </p>
           </div>
           <Media.Body className="testimonial-body">
-            <p onClick={() => setExpandThird(!expandThird)}>
+            <div onClick={() => setExpandThird(!expandThird)}>
               Bryan and I have worked on several React and JavaScript
               applications within the last year. He’s been an excellent coding
               collaborator and a strong communicator. He’s someone who truly
@@ -78,7 +78,7 @@ const Testimonials = () => {
           technically inclined, and his drive and dedication to goals are an
           asset to any project he’s a part of.`
                 : ``}
-            </p>
+            </div>
           </Media.Body>
         </Media>
 
@@ -88,7 +88,7 @@ const Testimonials = () => {
             <p>Senior Teacher</p>
           </div>
           <Media.Body className="testimonial-body">
-            <p onClick={() => setExpandSecond(!expandSecond)}>
+            <div onClick={() => setExpandSecond(!expandSecond)}>
               Bryan spent 3 years as a teacher for Head Start English School in
               Taipei, Taiwan. He was well liked and respected by his colleagues
               and his supervisors. He was extremely self motivating; attending
@@ -102,7 +102,7 @@ const Testimonials = () => {
                 position with excellence. Bryan left this position when he moved
                 away from Taiwan. He would certainly be welcomed back.`
                 : ``}
-            </p>
+            </div>
           </Media.Body>
         </Media>
 

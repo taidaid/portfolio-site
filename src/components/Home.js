@@ -59,7 +59,7 @@ const Home = () => {
               </p>
             </div>
             <Media.Body className="testimonial-body">
-              <p
+              <div
                 className="read-more"
                 onClick={() => setExpandFirst(!expandFirst)}
               >
@@ -91,7 +91,7 @@ const Home = () => {
                 works well with others.`
                     : ``}
                 </p>
-              </p>
+              </div>
             </Media.Body>
           </Media>
 
@@ -103,7 +103,7 @@ const Home = () => {
               </p>
             </div>
             <Media.Body className="testimonial-body">
-              <p
+              <div
                 className="read-more"
                 onClick={() => setExpandThird(!expandThird)}
               >
@@ -118,7 +118,7 @@ const Home = () => {
           technically inclined, and his drive and dedication to goals are an
           asset to any project he’s a part of.`
                   : ``}
-              </p>
+              </div>
             </Media.Body>
           </Media>
 
@@ -130,7 +130,7 @@ const Home = () => {
               </p>
             </div>
             <Media.Body className="testimonial-body">
-              <p
+              <div
                 className="read-more"
                 onClick={() => setExpandSecond(!expandSecond)}
               >
@@ -148,7 +148,7 @@ const Home = () => {
                 position with excellence. Bryan left this position when he moved
                 away from Taiwan. He would certainly be welcomed back.`
                   : ``}
-              </p>
+              </div>
             </Media.Body>
           </Media>
 

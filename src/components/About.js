@@ -17,7 +17,7 @@ const About = () => {
         <Media className="about-header text-center">
           <Media.Body className="">
             <h1>歡迎光臨!</h1>
-            <p>
+            <div>
               '歡迎光臨' means 'Welcome' in Chinese. Thanks for visiting my
               website. If you are interested in finding out more about me, my
               interests, projects, or skills, please browse around or feel free
@@ -47,7 +47,7 @@ const About = () => {
                   </a>
                 </span>
               </div>
-            </p>
+            </div>
           </Media.Body>
         </Media>
       </Row>
