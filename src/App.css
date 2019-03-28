@@ -55,6 +55,10 @@ a:hover {
   padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
+.read-more {
+  cursor: pointer;
+}
+
 .footer {
   flex-flow: row;
   width: 100%;
@@ -79,7 +83,8 @@ a:hover {
   max-width: 100%;
 }
 
-.Home .media {
+.Home .media,
+.testimonial {
   border-top: 1px solid lightgray;
 }
 
@@ -92,8 +97,15 @@ a:hover {
 }
 
 .testimonial-header {
+  padding: 5vh 0;
+  align-self: flex-start;
   width: 33%;
 }
+
+/* .testimonial-body {
+  width: 66%;
+  right: 0;
+} */
 
 .About > .row:nth-child(even) .media {
   background-color: rgb(32, 32, 32);
@@ -123,10 +135,36 @@ a:hover {
   width: 15vw;
 }
 
+.Testimonials {
+  width: 100%;
+}
+
 /* Small screen styles, width is set to iPhoneX width*/
 @media only screen and (max-width: 1024px) {
   .navbar {
     padding: 0.5rem 0;
+  }
+
+  .headline {
+    min-height: 270px;
+  }
+
+  .dropdown > a {
+    color: rgba(250, 250, 250, 0.7) !important;
+    right: 0;
+  }
+
+  .dropdown {
+    position: absolute;
+    margin: auto 0;
+    right: 5vw;
+    top: 25%;
+  }
+
+  .dropdown-menu {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    right: 0;
+    left: initial !important;
   }
 
   .testimonial {
@@ -139,6 +177,7 @@ a:hover {
   .testimonial-header {
     order: 2;
     padding: 0 1.5rem;
+    min-width: 100%;
   }
   .media-body {
     padding: 0 auto;
@@ -211,6 +250,10 @@ a:hover {
   }
 
   .Home {
+    width: 66%;
+  }
+
+  .Testimonials {
     width: 66%;
   }
 }

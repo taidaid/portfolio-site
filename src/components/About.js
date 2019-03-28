@@ -14,7 +14,7 @@ const About = () => {
   return (
     <Container fluid className="About align-items-center">
       <Row className="justify-content-center mb-5 col-12">
-        <Media className="about-header ">
+        <Media className="about-header text-center">
           <Media.Body className="">
             <h1>歡迎光臨!</h1>
             <p>
@@ -22,25 +22,31 @@ const About = () => {
               website. If you are interested in finding out more about me, my
               interests, projects, or skills, please browse around or feel free
               to <a href="mailto:windsor.bryan@gmail.com">contact me</a>.
-              <span>
-                <a href="https://www.linkedin.com/in/bryanwindsor/">
-                  <img
-                    className="p-2"
-                    src={LinkedinLogo}
-                    alt="Linkedin Profile"
-                  />
-                </a>
-              </span>
-              <span>
-                <a href="https://github.com/taidaid">
-                  <img className="p-2" src={GithubLogo} alt="Github Profile" />
-                </a>
-              </span>
-              <span>
-                <a href="mailto:windsor.bryan@gmail.com">
-                  <img className="p-2" src={GmailLogo} alt="Gmail" />
-                </a>
-              </span>
+              <div className="contact">
+                <span>
+                  <a href="https://www.linkedin.com/in/bryanwindsor/">
+                    <img
+                      className="p-2"
+                      src={LinkedinLogo}
+                      alt="Linkedin Profile"
+                    />
+                  </a>
+                </span>
+                <span>
+                  <a href="https://github.com/taidaid">
+                    <img
+                      className="p-2"
+                      src={GithubLogo}
+                      alt="Github Profile"
+                    />
+                  </a>
+                </span>
+                <span>
+                  <a href="mailto:windsor.bryan@gmail.com?subject=Developer Opportunity">
+                    <img className="p-2" src={GmailLogo} alt="Gmail" />
+                  </a>
+                </span>
+              </div>
             </p>
           </Media.Body>
         </Media>

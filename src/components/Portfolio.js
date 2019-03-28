@@ -12,38 +12,44 @@ import GmailLogo from "../assets/Gmail-Mark-32px.png";
 const Portfolio = () => {
   return (
     <Container fluid className="Portfolio col-12 align-items-center">
-      <Row className="justify-content-center col-12">
+      <Row className="justify-content-center col-12 ">
         <Media className="">
-          <Media.Body className="">
+          <Media.Body className="portfolio-header text-center">
             <h2>I'm looking for opportunities!</h2>
             <p>
               I'm available to put my skills to work for you! Feel free to
-              contact me:{" "}
-              <span>
-                <a href="https://www.linkedin.com/in/bryanwindsor/">
-                  <img
-                    className="p-2"
-                    src={LinkedinLogo}
-                    alt="Linkedin Profile"
-                  />
-                </a>
-              </span>
-              <span>
-                <a href="https://github.com/taidaid">
-                  <img className="p-2" src={GithubLogo} alt="Github Profile" />
-                </a>
-              </span>
-              <span>
-                <a href="mailto:windsor.bryan@gmail.com?subject=Developer Opportunity">
-                  <img className="p-2" src={GmailLogo} alt="Gmail" />
-                </a>
-              </span>
+              <a href="mailto:windsor.bryan@gmail.com">contact me</a>.
+              <div className="contact">
+                <span>
+                  <a href="https://www.linkedin.com/in/bryanwindsor/">
+                    <img
+                      className="p-2"
+                      src={LinkedinLogo}
+                      alt="Linkedin Profile"
+                    />
+                  </a>
+                </span>
+                <span>
+                  <a href="https://github.com/taidaid">
+                    <img
+                      className="p-2"
+                      src={GithubLogo}
+                      alt="Github Profile"
+                    />
+                  </a>
+                </span>
+                <span>
+                  <a href="mailto:windsor.bryan@gmail.com?subject=Developer Opportunity">
+                    <img className="p-2" src={GmailLogo} alt="Gmail" />
+                  </a>
+                </span>
+              </div>
             </p>
           </Media.Body>
         </Media>
       </Row>
       <Row className="justify-content-center col-12 ">
-        <Media className="project-block" id="project-1 align-items-center">
+        <Media className="project-block " id="project-1 ">
           <div className="media-image">
             <a href="https://protected-taiga-22940.herokuapp.com/">
               <img src={FaceDetectImage} alt="Face Detection App" />
@@ -91,7 +97,7 @@ const Portfolio = () => {
               <img src={RoboFriendsImage} alt="Bills Tracker App" />
             </a>
           </div>
-          <Media.Body className="project-body" id="project-2">
+          <Media.Body className="project-body" id="project-3">
             <h2>Bills Tracker</h2>
             <p>
               Record, categorize, and chart bills. Built with React,
@@ -106,19 +112,41 @@ const Portfolio = () => {
         </Media>
       </Row>
       <Row className="justify-content-center col-12 ">
-        <Media className="project-block" id="project-2">
+        <Media className="project-block" id="project-4">
           <div className="media-image">
             <a href="https://aqueous-hamlet-47886.herokuapp.com/">
               <img src={PixelArtImage} alt="Robofriends w/Redux App" />
             </a>
           </div>
-          <Media.Body className="project-body" id="project-2">
+          <Media.Body className="project-body" id="project-4">
             <h2>Robofriends w/Redux</h2>
             <p>
               Fetch users data and search by name. Built with React and Redux.
             </p>
             <p>
               <a href="https://github.com/taidaid/robofriends">
+                <img src={GitHubLogo} alt="Source code" />
+              </a>
+            </p>
+          </Media.Body>
+        </Media>
+      </Row>
+      <Row className="justify-content-center col-12 ">
+        <Media className="project-block" id="project-5">
+          <div className="media-image">
+            <a href="https://fast-falls-89000.herokuapp.com">
+              <img src={PixelArtImage} alt="Store Checkout App" />
+            </a>
+          </div>
+          <Media.Body className="project-body" id="project-5">
+            <h2>Store Checkout</h2>
+            <p>
+              Create a list of products, add products to a shopping cart, and
+              checkout via Stripe. Built with React, Stripe API, and Web Storage
+              API.
+            </p>
+            <p>
+              <a href="https://github.com/taidaid/ecommerce-site">
                 <img src={GitHubLogo} alt="Source code" />
               </a>
             </p>

@@ -14,7 +14,7 @@ const Home = () => {
     <Container fluid className="align-items-center">
       <Row className="col-12 justify-content-center">
         <div className="Home">
-          <div>
+          <div className="headline">
             <h1>
               Hello World.
               <br />I am Bryan Windsor,{" "}
@@ -42,9 +42,9 @@ const Home = () => {
                 <Link className="textLink" to="/about">
                   'about',
                 </Link>{" "}
-                or{" "}
+                or check out{" "}
                 <Link className="textLink" to="/portfolio">
-                  'portfolio'
+                  my portfolio
                 </Link>{" "}
                 to see some of my work.
               </p>
@@ -53,11 +53,16 @@ const Home = () => {
 
           <Media className="testimonial">
             <div className="testimonial-header">
-              <h5>John Whaley</h5>
-              <p>Executive Vice President</p>
+              <p>John Whaley</p>
+              <p>
+                <em>Executive Vice President</em>
+              </p>
             </div>
             <Media.Body className="testimonial-body">
-              <p onClick={() => setExpandFirst(!expandFirst)}>
+              <p
+                className="read-more"
+                onClick={() => setExpandFirst(!expandFirst)}
+              >
                 <p>
                   As the Executive Vice President of a growing company, I had
                   the pleasure of working with Mr. Windsor for several years.
@@ -92,11 +97,16 @@ const Home = () => {
 
           <Media className="testimonial">
             <div className="testimonial-header">
-              <h5>Alex Levitt</h5>
-              <p>Consultant, Applied Behavioral Science</p>
+              <p>Alex Levitt</p>
+              <p>
+                <em>Consultant, Applied Behavioral Science</em>
+              </p>
             </div>
             <Media.Body className="testimonial-body">
-              <p onClick={() => setExpandThird(!expandThird)}>
+              <p
+                className="read-more"
+                onClick={() => setExpandThird(!expandThird)}
+              >
                 Bryan and I have worked on several React and JavaScript
                 applications within the last year. He’s been an excellent coding
                 collaborator and a strong communicator. He’s someone who truly
@@ -114,11 +124,16 @@ const Home = () => {
 
           <Media className="testimonial">
             <div className="testimonial-header">
-              <h5>Ryan Harrington</h5>
-              <p>Senior Teacher</p>
+              <p>Ryan Harrington</p>
+              <p>
+                <em>Senior Teacher</em>
+              </p>
             </div>
             <Media.Body className="testimonial-body">
-              <p onClick={() => setExpandSecond(!expandSecond)}>
+              <p
+                className="read-more"
+                onClick={() => setExpandSecond(!expandSecond)}
+              >
                 Bryan spent 3 years as a teacher for Head Start English School
                 in Taipei, Taiwan. He was well liked and respected by his
                 colleagues and his supervisors. He was extremely self
@@ -139,8 +154,10 @@ const Home = () => {
 
           <Media className="testimonial">
             <div className="testimonial-header">
-              <h5>Todd Pennington</h5>
-              <p>Strategic Account Manager</p>
+              <p>Todd Pennington</p>
+              <p>
+                <em>Strategic Account Manager</em>
+              </p>
             </div>
             <Media.Body className="testimonial-body">
               <p>

@@ -4,6 +4,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
+import Testimonials from "./components/Testimonials";
 import NavbarComponent from "./components/NavbarComponent";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -40,6 +41,7 @@ class App extends React.Component {
                   {/* Website routes with specified url endings */}
                   <Route path="/about" component={About} />
                   <Route path="/portfolio" component={Portfolio} />
+                  <Route path="/testimonials" component={Testimonials} />
                   <Route path="/" component={Home} />
                 </Switch>
               </CSSTransition>
