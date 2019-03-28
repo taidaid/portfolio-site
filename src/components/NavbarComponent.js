@@ -16,52 +16,50 @@ const NavbarComponent = () => {
           />
         </Link>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        {/*small viewport*/}
-        <MediaQuery maxDeviceWidth={1024}>
-          <Nav className="mobileNav">
-            <NavDropdown title="" id="basic-nav-dropdown">
-              <Nav.Item className="m-auto">
-                <Link className="textLink" to="/about">
-                  about
-                </Link>
-              </Nav.Item>
-              <Nav.Item className="m-auto">
-                <Link className="textLink" to="/portfolio">
-                  portfolio
-                </Link>
-              </Nav.Item>
-              <Nav.Item className="m-auto">
-                <Link className="textLink" to="/testimonials">
-                  testimonials
-                </Link>
-              </Nav.Item>
-            </NavDropdown>
-          </Nav>
-        </MediaQuery>
 
-        {/*large viewport*/}
-        <MediaQuery minDeviceWidth={1024}>
-          <Nav className="largeNav" variant="pills">
-            <Nav.Item className="m-auto">
+      {/*small viewport*/}
+      <MediaQuery maxDeviceWidth={1024}>
+        <Nav className="mobileNav">
+          <NavDropdown title="Menu" id="basic-nav-dropdown">
+            <NavDropdown.Item className="m-auto">
               <Link className="textLink" to="/about">
                 about
               </Link>
-            </Nav.Item>
-            <Nav.Item className="m-auto">
+            </NavDropdown.Item>
+            <NavDropdown.Item className="m-auto">
               <Link className="textLink" to="/portfolio">
                 portfolio
               </Link>
-            </Nav.Item>
-            <Nav.Item className="m-auto">
+            </NavDropdown.Item>
+            <NavDropdown.Item className="m-auto">
               <Link className="textLink" to="/testimonials">
                 testimonials
               </Link>
-            </Nav.Item>
-          </Nav>
-        </MediaQuery>
-      </Navbar.Collapse>
+            </NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+      </MediaQuery>
+
+      {/*large viewport*/}
+      <MediaQuery minDeviceWidth={1024}>
+        <Nav className="largeNav" variant="pills">
+          <Nav.Item className="m-auto">
+            <Link className="textLink" to="/about">
+              about
+            </Link>
+          </Nav.Item>
+          <Nav.Item className="m-auto">
+            <Link className="textLink" to="/portfolio">
+              portfolio
+            </Link>
+          </Nav.Item>
+          <Nav.Item className="m-auto">
+            <Link className="textLink" to="/testimonials">
+              testimonials
+            </Link>
+          </Nav.Item>
+        </Nav>
+      </MediaQuery>
     </Navbar>
   );
 };

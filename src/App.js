@@ -7,6 +7,7 @@ import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
 import NavbarComponent from "./components/NavbarComponent";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 
 class App extends React.Component {
@@ -43,6 +44,7 @@ class App extends React.Component {
                   <Route path="/portfolio" component={Portfolio} />
                   <Route path="/testimonials" component={Testimonials} />
                   <Route path="/" component={Home} />
+                  <Route component={ScrollToTop} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>

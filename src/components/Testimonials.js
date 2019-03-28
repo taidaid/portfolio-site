@@ -11,17 +11,19 @@ const Testimonials = () => {
         <Media className="">
           <Media.Body className="testimonial-body">
             <p>
-              In my career, I have found great success in keeping the needs of
-              the stakeholder foremost. The effectiveness of this philosophy can
-              be demonstrated by some of my greatest testimonials from satisfied
-              clients and colleagues.
+              I have had great success in prioritizing collaboration and
+              relationships. A great team chemistry is hard to beat. The
+              effectiveness of this philosophy can be seen in some of my
+              favorite testimonials from satisfied clients and colleagues.
             </p>
           </Media.Body>
         </Media>
         <Media className="testimonial">
           <div className="testimonial-header">
             <p>John Whaley</p>
-            <p>Executive Vice President</p>
+            <p>
+              <em>Executive Vice President</em>
+            </p>
           </div>
           <Media.Body className="testimonial-body">
             <p onClick={() => setExpandFirst(!expandFirst)}>
@@ -59,7 +61,9 @@ const Testimonials = () => {
         <Media className="testimonial">
           <div className="testimonial-header">
             <p>Alex Levitt</p>
-            <p>Consultant, Applied Behavioral Science</p>
+            <p>
+              <em>Consultant, Applied Behavioral Science</em>
+            </p>
           </div>
           <Media.Body className="testimonial-body">
             <p onClick={() => setExpandThird(!expandThird)}>
@@ -105,7 +109,9 @@ const Testimonials = () => {
         <Media className="testimonial">
           <div className="testimonial-header">
             <p>Todd Pennington</p>
-            <p>Strategic Account Manager</p>
+            <p>
+              <em>Strategic Account Manager</em>
+            </p>
           </div>
           <Media.Body className="testimonial-body">
             <p>
@@ -122,7 +128,9 @@ const Testimonials = () => {
         <Media className="testimonial">
           <div className="testimonial-header">
             <p>Huey</p>
-            <p>Student</p>
+            <p>
+              <em>Student</em>
+            </p>
           </div>
           <Media.Body className="testimonial-body">
             <p>
@@ -141,7 +149,9 @@ const Testimonials = () => {
         <Media className="testimonial">
           <div className="testimonial-header">
             <p>Vivian</p>
-            <p>Student</p>
+            <p>
+              <em>Student</em>
+            </p>
           </div>
           <Media.Body className="testimonial-body">
             <p>
@@ -158,7 +168,9 @@ const Testimonials = () => {
         <Media className="testimonial">
           <div className="testimonial-header">
             <p>Tiger</p>
-            <p>Student</p>
+            <p>
+              <em>Student</em>
+            </p>
           </div>
           <Media.Body className="testimonial-body">
             <p>
@@ -172,7 +184,9 @@ const Testimonials = () => {
         <Media className="testimonial">
           <div className="testimonial-header">
             <p>Benson</p>
-            <p>Student</p>
+            <p>
+              <em>Student</em>
+            </p>
           </div>
           <Media.Body className="testimonial-body">
             <p>
@@ -189,7 +203,9 @@ const Testimonials = () => {
         <Media className="testimonial">
           <div className="testimonial-header">
             <p>David</p>
-            <p>Student</p>
+            <p>
+              <em>Student</em>
+            </p>
           </div>
           <Media.Body className="testimonial-body">
             <p>
