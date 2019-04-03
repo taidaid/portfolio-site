@@ -134,6 +134,19 @@ a:hover {
   width: 100%;
 }
 
+.App-logo:hover {
+  animation: app-logo-spin 0.5s ease-in-out;
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Small screen styles, width is set to iPhoneX width*/
 @media only screen and (max-width: 1024px) {
   .navbar {
