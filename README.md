@@ -1,4 +1,4 @@
-#Bryan's Portfolio Site
+# Bryan's Portfolio Site
 
 1. Welcome to my portfolio site. This was a labor of love made with React, React-Router, React-Bootstrap, React-Transition-Group, React-Textloop, and React-Responsive.
 2. I wanted to try out React-Bootstrap, but in the end, I decided it will not be a library that I use in the future. Its built-in styling did not give me the freedom I wanted.
