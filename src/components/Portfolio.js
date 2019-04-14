@@ -18,7 +18,7 @@ const Portfolio = () => {
           <Media.Body className="portfolio-header text-center">
             <h2>I'm looking for opportunities!</h2>
             <div>
-              I'm available to put my skills to work for you! Feel free to
+              I'm available to put my skills to work for you! Feel free to{" "}
               <a href="mailto:windsor.bryan@gmail.com">contact me</a>.
               <div className="contact">
                 <span>
@@ -78,11 +78,12 @@ const Portfolio = () => {
             </a>
           </div>
           <Media.Body className="project-body" id="project-2">
-            <h2>Pixel Art</h2>
+            <h2>Bills Tracker</h2>
             <p>
-              Draw pictures by filling large pixels. Built with React and Web
-              Storage API.
+              Record, categorize, and chart bills. Built with React,
+              React-Router, Chart.js, and Web Storage API.
             </p>
+
             <p>
               <a href="https://github.com/taidaid/pixelart-react">
                 <img src={GitHubLogo} alt="Source code" />
@@ -99,10 +100,9 @@ const Portfolio = () => {
             </a>
           </div>
           <Media.Body className="project-body" id="project-3">
-            <h2>Bills Tracker</h2>
+            <h2>Robofriends w/Redux</h2>
             <p>
-              Record, categorize, and chart bills. Built with React,
-              React-Router, Chart.js, and Web Storage API.
+              Fetch users' data and search by name. Built with React and Redux.
             </p>
             <p>
               <a href="https://github.com/taidaid/bills-tracker">
@@ -120,10 +120,12 @@ const Portfolio = () => {
             </a>
           </div>
           <Media.Body className="project-body" id="project-4">
-            <h2>Robofriends w/Redux</h2>
+            <h2>Pixel Art</h2>
             <p>
-              Fetch users data and search by name. Built with React and Redux.
+              Draw pictures by filling large pixels. Built with React and Web
+              Storage API.
             </p>
+
             <p>
               <a href="https://github.com/taidaid/robofriends">
                 <img src={GitHubLogo} alt="Source code" />
