@@ -67,17 +67,21 @@ const Testimonials = () => {
           </div>
           <Media.Body className="testimonial-body">
             <div onClick={() => setExpandThird(!expandThird)}>
-              Bryan and I have worked on several React and JavaScript
-              applications within the last year. He’s been an excellent coding
-              collaborator and a strong communicator. He’s someone who truly
-              loves to learn, and his ability to quickly grasp, implement,
-              explore and debug new technologies has impressed me many times.{" "}
-              <em>{expandThird ? "" : "Read more..."}</em>
-              {expandThird
-                ? `He’s highly motivated,
+              <p>
+                Bryan and I have worked on several React and JavaScript
+                applications within the last year. He’s been an excellent coding
+                collaborator and a strong communicator. He’s someone who truly
+                loves to learn, and his ability to quickly grasp, implement,
+                explore and debug new technologies has impressed me many times.{" "}
+                <em>{expandThird ? "" : "Read more..."}</em>
+              </p>
+              <p>
+                {expandThird
+                  ? `He’s highly motivated,
           technically inclined, and his drive and dedication to goals are an
           asset to any project he’s a part of.`
-                : ``}
+                  : ``}
+              </p>
             </div>
           </Media.Body>
         </Media>
@@ -89,19 +93,24 @@ const Testimonials = () => {
           </div>
           <Media.Body className="testimonial-body">
             <div onClick={() => setExpandSecond(!expandSecond)}>
-              Bryan spent 3 years as a teacher for Head Start English School in
-              Taipei, Taiwan. He was well liked and respected by his colleagues
-              and his supervisors. He was extremely self motivating; attending
-              Chinese classes in the morning while teaching afternoons and
-              evenings. <em>{expandSecond ? "" : "Read more..."}</em>
-              {expandSecond
-                ? `Bryan was creative and patient
+              <p>
+                Bryan spent 3 years as a teacher for Head Start English School
+                in Taipei, Taiwan. He was well liked and respected by his
+                colleagues and his supervisors. He was extremely self
+                motivating; attending Chinese classes in the morning while
+                teaching afternoons and evenings.{" "}
+                <em>{expandSecond ? "" : "Read more..."}</em>
+              </p>
+              <p>
+                {expandSecond
+                  ? `Bryan was creative and patient
                 with his students. He taught both assigned curriculum as well as
                 classes he developed himself. Bryan required very little
                 training or supervision as he understood and executed his
                 position with excellence. Bryan left this position when he moved
                 away from Taiwan. He would certainly be welcomed back.`
-                : ``}
+                  : ``}
+              </p>
             </div>
           </Media.Body>
         </Media>
