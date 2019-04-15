@@ -21,22 +21,22 @@ const NavbarComponent = () => {
       <MediaQuery maxDeviceWidth={1024}>
         <Nav className="mobileNav">
           <NavDropdown title="Menu" id="basic-nav-dropdown">
-            <NavDropdown.Item className="m-auto">
+            <NavDropdown.Item className="m-auto" as="div">
               <Link className="textLink" to="/about">
                 about
               </Link>
             </NavDropdown.Item>
-            <NavDropdown.Item className="m-auto">
+            <NavDropdown.Item className="m-auto" as="div">
               <Link className="textLink" to="/portfolio">
                 portfolio
               </Link>
             </NavDropdown.Item>
-            <NavDropdown.Item className="m-auto">
+            <NavDropdown.Item className="m-auto" as="div">
               <Link className="textLink" to="/testimonials">
                 testimonials
               </Link>
             </NavDropdown.Item>
-            <NavDropdown.Item className="m-auto">
+            <NavDropdown.Item className="m-auto" as="div">
               <a className="textLink" href="https://zety.com/mycv/bryanwindsor">
                 resume
               </a>
