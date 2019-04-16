@@ -117,7 +117,7 @@ body > #root > div {
 }
 
 .loading-logo {
-  animation: loading-logo-spin infinite 30s linear;
+  animation: loading-logo-spin infinite 5s linear;
   width: auto;
   height: 150px;
 }
