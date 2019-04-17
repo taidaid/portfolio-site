@@ -89,7 +89,9 @@ const Testimonials = () => {
         <Media className="testimonial">
           <div className="testimonial-header">
             <p>Ryan Harrington</p>
-            <p>Senior Teacher</p>
+            <p>
+              <em>Senior Teacher</em>
+            </p>
           </div>
           <Media.Body className="testimonial-body">
             <div onClick={() => setExpandSecond(!expandSecond)}>
