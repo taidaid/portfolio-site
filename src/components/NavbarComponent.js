@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import TaidaidLogo from "../assets/taidaid-logo.png";
 import MediaQuery from "react-responsive";
 
 const NavbarComponent = () => {
@@ -8,12 +9,7 @@ const NavbarComponent = () => {
     <Navbar fixed="top">
       <Navbar.Brand>
         <Link to="/">
-          <img
-            src="https://i.imgur.com/kdRv3qa.png"
-            className="App-logo"
-            alt="logo"
-            width="80"
-          />
+          <img src={TaidaidLogo} className="App-logo" alt="logo" width="80" />
         </Link>
       </Navbar.Brand>
 
