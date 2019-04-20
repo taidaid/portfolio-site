@@ -9,6 +9,7 @@ import StoreCheckoutImage from "../assets/store-checkout-capture.PNG";
 import GithubLogo from "../assets/GitHub-Mark-32px.png";
 import LinkedinLogo from "../assets/Linkedin-Mark-32px.png";
 import GmailLogo from "../assets/Gmail-Mark-32px.png";
+import HerokuLogo from "../assets/heroku-logo-solid-purple.svg";
 
 const Portfolio = () => {
   return (
@@ -49,6 +50,16 @@ const Portfolio = () => {
           </Media.Body>
         </Media>
       </Row>
+      <p className="advisory">
+        <em>
+          These apps are hosted for free on
+          <a href="http://heroku.com">
+            <img id="heroku-logo" src={HerokuLogo} alt="Heroku" />
+            Heroku
+          </a>
+          . They may take ~30 seconds to open.
+        </em>
+      </p>
       <Row className="justify-content-center col-12 ">
         <Media className="project-block " id="project-1 ">
           <div className="media-image">

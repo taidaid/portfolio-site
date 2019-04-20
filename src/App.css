@@ -126,6 +126,14 @@ a:hover {
   width: 15vw;
 }
 
+.advisory {
+  font-size: 0.9em;
+}
+
+#heroku-logo {
+  width: 1.5em;
+}
+
 .intro-image {
   width: 15vw;
 }
