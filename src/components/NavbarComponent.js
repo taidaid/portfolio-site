@@ -37,9 +37,9 @@ const NavbarComponent = () => {
               </Link>
             </NavDropdown.Item>
             <NavDropdown.Item className="m-auto" as="div">
-              <a className="textLink" href="https://zety.com/mycv/bryanwindsor">
+              <Link className="textLink" to="/resume">
                 resume
-              </a>
+              </Link>
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
@@ -64,9 +64,9 @@ const NavbarComponent = () => {
             </Link>
           </Nav.Item>
           <Nav.Item className="m-auto">
-            <a className="textLink" href="https://zety.com/mycv/bryanwindsor">
+            <Link className="textLink" to="/resume">
               resume
-            </a>
+            </Link>
           </Nav.Item>
         </Nav>
       </MediaQuery>

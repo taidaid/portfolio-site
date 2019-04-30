@@ -35,7 +35,7 @@
 .container-fluid {
   display: flex;
   flex-flow: column;
-  margin: calc(60px + 1rem) 0;
+  margin: calc(60px + 1rem) 0 0 0;
 }
 
 a {

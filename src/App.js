@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
+import Resume from "./components/Resume";
 import NavbarComponent from "./components/NavbarComponent";
 import Footer from "./components/Footer";
 
@@ -43,6 +44,7 @@ class App extends React.Component {
                   <Route path="/about" component={About} />
                   <Route path="/portfolio" component={Portfolio} />
                   <Route path="/testimonials" component={Testimonials} />
+                  <Route path="/resume" component={Resume} />
                   <Route path="/" component={Home} />
                 </Switch>
               </CSSTransition>
