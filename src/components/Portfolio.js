@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Media } from "react-bootstrap";
 import GitHubLogo from "../assets/GitHub-Mark-32px.png";
+import WeatherAppCapture from "../assets/the_weather_app_capture.PNG";
 import FaceDetectImage from "../assets/Face-Detect-Capture.PNG";
 import BillsTrackerImage from "../assets/bills-tracker-capture.PNG";
 import RoboFriendsImage from "../assets/Robofriends-capture.png";
@@ -52,11 +53,33 @@ const Portfolio = () => {
       <Row className="justify-content-center col-12 ">
         <Media className="project-block " id="project-1 ">
           <div className="media-image">
+            <a href="https://clockwork-weather-app.herokuapp.com/">
+              <img src={WeatherAppCapture} alt="The Weather App" />
+            </a>
+          </div>
+          <Media.Body className="project-body" id="project-1">
+            <h2>The Weather App</h2>
+            <p>
+              Displays weather forecasts. Built with Create-React-App,
+              Dark-Sky-API, Opencage-API-Client, React-Chartjs-2, and
+              React-Smooth-Collapse.
+            </p>
+            <p>
+              <a href="https://github.com/taidaid/weatherapp">
+                <img src={GitHubLogo} alt="Source code" />
+              </a>
+            </p>
+          </Media.Body>
+        </Media>
+      </Row>
+      <Row className="justify-content-center col-12 ">
+        <Media className="project-block " id="project-2 ">
+          <div className="media-image">
             <a href="https://protected-taiga-22940.herokuapp.com/">
               <img src={FaceDetectImage} alt="Face Detection App" />
             </a>
           </div>
-          <Media.Body className="project-body">
+          <Media.Body className="project-body" id="project-2">
             <h2>Face Detection</h2>
             <p>
               Detects faces in pictures. Built with React, Tachyons, and Web
@@ -71,13 +94,13 @@ const Portfolio = () => {
         </Media>
       </Row>
       <Row className="justify-content-center col-12 ">
-        <Media className="project-block" id="project-2">
+        <Media className="project-block" id="project-3">
           <div className="media-image">
             <a href="https://stormy-sands-35736.herokuapp.com/">
               <img src={BillsTrackerImage} alt="Pixel Art App" />
             </a>
           </div>
-          <Media.Body className="project-body" id="project-2">
+          <Media.Body className="project-body" id="project-3">
             <h2>Bills Tracker</h2>
             <p>
               Record, categorize, and chart bills. Built with React,
@@ -93,13 +116,13 @@ const Portfolio = () => {
         </Media>
       </Row>
       <Row className="justify-content-center col-12 ">
-        <Media className="project-block" id="project-3">
+        <Media className="project-block" id="project-4">
           <div className="media-image">
             <a href="https://pacific-hollows-60748.herokuapp.com/">
               <img src={RoboFriendsImage} alt="Bills Tracker App" />
             </a>
           </div>
-          <Media.Body className="project-body" id="project-3">
+          <Media.Body className="project-body" id="project-4">
             <h2>Robofriends w/Redux</h2>
             <p>
               Fetch users' data and search by name. Built with React and Redux.
@@ -113,13 +136,13 @@ const Portfolio = () => {
         </Media>
       </Row>
       <Row className="justify-content-center col-12 ">
-        <Media className="project-block" id="project-4">
+        <Media className="project-block" id="project-5">
           <div className="media-image">
             <a href="https://aqueous-hamlet-47886.herokuapp.com/">
               <img src={PixelArtImage} alt="Robofriends w/Redux App" />
             </a>
           </div>
-          <Media.Body className="project-body" id="project-4">
+          <Media.Body className="project-body" id="project-5">
             <h2>Pixel Art</h2>
             <p>
               Draw pictures by filling large pixels. Built with React and Web
@@ -135,13 +158,13 @@ const Portfolio = () => {
         </Media>
       </Row>
       <Row className="justify-content-center col-12 ">
-        <Media className="project-block" id="project-5">
+        <Media className="project-block" id="project-6">
           <div className="media-image">
             <a href="https://fast-falls-89000.herokuapp.com">
               <img src={StoreCheckoutImage} alt="Store Checkout App" />
             </a>
           </div>
-          <Media.Body className="project-body" id="project-5">
+          <Media.Body className="project-body" id="project-6">
             <h2>Store Checkout</h2>
             <p>
               Create a list of products, add products to a shopping cart, and
