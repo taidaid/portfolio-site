@@ -120,6 +120,7 @@ a:hover {
 
 .Portfolio div > a > img {
   border: 1px solid black;
+  width: 100%;
 }
 
 .About div > img {
@@ -189,6 +190,9 @@ a:hover {
   }
   .media-body {
     padding: 0 auto;
+  }
+  .media-image {
+    width: 100%;
   }
   .introduction {
     display: flex;
