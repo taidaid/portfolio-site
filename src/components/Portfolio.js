@@ -107,8 +107,8 @@ const Portfolio = () => {
               Technical writing covering{" "}
               <a href="https://www.udemy.com/advanced-javascript-concepts/">
                 Advanced JavaScript Concepts
-              </a>{" "}
-              for one of the highest-rated Web Development courses on Udemy.
+              </a>
+              , one of the highest-rated Web Development courses on Udemy.
             </p>
             <p>
               <a href="https://docs.google.com/document/d/1VPGK4isl2HhuXIIhTdZZCkjoubF0W1diJyx1WpmoS8c/edit?usp=sharing">
