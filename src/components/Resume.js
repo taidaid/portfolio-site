@@ -1,10 +1,9 @@
 import React from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import myResume from "../assets/resume-bryan-windsor.pdf";
+import myCV from "../assets/Bryan Windsor-CV.pdf";
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${
-  pdfjs.version
-}/pdf.worker.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const Resume = () => {
   return (
@@ -17,12 +16,20 @@ const Resume = () => {
           color: "lightgray"
         }}
       >
-        <a href="https://app.zety.com/mycv/8ed5ad11-0a66-4f73-a7f8-a61ef8b39b87/download">
+        <a href={myCV} download>
           Download
         </a>
       </button>
-      <Document className="Resume align-items-center  " file={myResume}>
+      <Document className="Resume align-items-center  " file={myCV}>
         <Page pageIndex={0} />
+        <hr />
+        <Page pageIndex={1} />
+        <hr />
+        <Page pageIndex={2} />
+        <hr />
+        <Page pageIndex={3} />
+        <hr />
+        <Page pageIndex={4} />
       </Document>
     </div>
   );
