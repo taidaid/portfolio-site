@@ -1,7 +1,7 @@
 import React from "react";
 import { Document, Page, pdfjs } from "react-pdf";
-import myResume from "../assets/resume-bryan-windsor.pdf";
-import myCV from "../assets/Bryan Windsor-CV.pdf";
+// import myResume from "../assets/resume-bryan-windsor.pdf";
+// import myCV from "../assets/Bryan Windsor-CV.pdf";
 import myCVCharcoal from "../assets/Bryan Windsor-CV-charcoal.pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -14,7 +14,7 @@ const Resume = () => {
           marginTop: "20px",
           background: "rgb(32, 32, 32)",
           borderRadius: "25px",
-          color: "lightgray"
+          color: "lightgray",
         }}
       >
         <a href={myCVCharcoal} download>

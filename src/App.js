@@ -4,7 +4,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
-import Testimonials from "./components/Testimonials";
+import Testimonials from "./components/Testimonials/TestimonialsPage";
 import Resume from "./components/Resume";
 import NavbarComponent from "./components/NavbarComponent";
 import Footer from "./components/Footer";
@@ -13,7 +13,7 @@ import "./App.css";
 
 class App extends React.Component {
   authenticate() {
-    return new Promise(resolve => setTimeout(resolve, 500));
+    return new Promise((resolve) => setTimeout(resolve, 500));
   }
 
   componentDidMount() {
