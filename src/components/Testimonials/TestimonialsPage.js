@@ -97,20 +97,6 @@ const TestimonialsPage = () => {
           Huey will take you to eat delicious food!`}
         />
         <Testimonial
-          name={"Huey"}
-          title={"Student"}
-          expandTextLink={" Show Translation..."}
-          firstSnippet={`  Bryan和Huey已经磨合的比较好，老师会在Huey已经掌握的情况下进行适当拓展，
-          非常棒的老师，还自学了中文，可以辅助教学，就是比较难约，希望有机会来广州旅行，
-          Huey带你去吃好吃的，毕竟食在广州嘛!`}
-          secondSnippet={`Bryan and Huey already get along well. The teacher expands
-          appropriately according to what Huey has already mastered. He is a
-          very good teacher, who has also taught himself Chinese. Can you
-          help us? It's just that it is quite difficult to book your
-          classes. We hope you have the opportunity to travel to Guangzhou.
-          Huey will take you to eat delicious food!`}
-        />
-        <Testimonial
           name={"Vivian"}
           title={"Student"}
           expandTextLink={" Show Translation..."}
@@ -134,10 +120,10 @@ const TestimonialsPage = () => {
           expandTextLink={" Show Translation..."}
           firstSnippet={`超级遗憾没有抢到Bryan老师的专属教师设置。Bryan老师对benson特别包容，
           也能够严格帮他纠正各种问题，小朋友最喜欢的老师`}
-          secondSnippet={`Super regret did not grab Bryan teacher's exclusive teacher
-          settings. Bryan teacher is particularly tolerant of benson, but
-          also to help him strictly correct all kinds of problems,
-          children's favorite teacher.`}
+          secondSnippet={`I really regret not getting onto Teacher Bryan's exclusive schedule. 
+          Teacher Bryan is particularly tolerant of benson, but
+          still strictly corrects all kinds of problems. He is my 
+          child's favorite teacher.`}
         />
         <Testimonial
           name={"David"}
@@ -150,8 +136,7 @@ const TestimonialsPage = () => {
           time I attended your class, David has become a loyal fan of you.
           You are a rare good teacher, but your class is [difficult to
           book]. Every Monday I come to see your class. It's not easy to
-          make an appointment with you for a class. That is to say, is it
-          easy to have the opportunity of giving priority to the class? I
+          make an appointment with you and it's not easy to get priority booking. I
           hope you can give me a lesson ~ ^ _ ^`}
         />
       </Row>
