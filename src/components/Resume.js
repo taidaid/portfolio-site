@@ -12,9 +12,9 @@ const Resume = () => {
       <button
         style={{
           marginTop: "20px",
-          background: "rgb(32, 32, 32)",
+          background: "#203864",
           borderRadius: "25px",
-          color: "lightgray",
+          color: "white",
         }}
       >
         <a href={myCV} download>
