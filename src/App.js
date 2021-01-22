@@ -1,6 +1,8 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
@@ -51,7 +53,7 @@ class App extends React.Component {
             </TransitionGroup>
           )}
         />
-        <Footer />
+        <Footer showCopyright />
       </div>
     );
   }
