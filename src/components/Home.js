@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import TextLoop from "react-text-loop";
 import ProfilePhoto from "../assets/profile-photo-2.jpg";
 import { Link } from "react-router-dom";
@@ -6,19 +6,10 @@ import { Container, Row, Media } from "react-bootstrap";
 import Testimonial from "../components/Testimonials/Testimonial";
 
 import "../App.css";
-import OpenToWorkModal from "./OpenToWorkModal";
 
 const Home = () => {
-  const [showModal, setShowModal] = useState(false);
-  useEffect(() => {
-    setTimeout(() => {
-      setShowModal(true);
-    }, 1000);
-  }, []);
-
   return (
     <>
-      <OpenToWorkModal showModal={showModal} setShowModal={setShowModal} />
       <Container fluid className="align-items-center">
         <Row className="col-12 justify-content-center">
           <div className="Home">

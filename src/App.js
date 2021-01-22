@@ -10,10 +10,16 @@ import Testimonials from "./components/Testimonials/TestimonialsPage";
 import Resume from "./components/Resume";
 import NavbarComponent from "./components/NavbarComponent";
 import Footer from "./components/Footer";
+import OpenToWorkModal from "./components/OpenToWorkModal";
 
 import "./App.css";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { showModal: false };
+    this.toggleModal = this.toggleModal.bind(this);
+  }
   authenticate() {
     return new Promise((resolve) => setTimeout(resolve, 500));
   }
@@ -28,13 +34,24 @@ class App extends React.Component {
           // remove from DOM
           ele.outerHTML = "";
         }, 500);
+        setTimeout(() => {
+          this.setState({ showModal: true });
+        }, 1000);
       }
     });
+  }
+
+  toggleModal() {
+    this.setState({ showModal: !this.state.showModal });
   }
 
   render() {
     return (
       <div className="App">
+        <OpenToWorkModal
+          showModal={this.state.showModal}
+          setShowModal={this.toggleModal}
+        />
         <NavbarComponent bg="dark" />
         <Route
           render={({ location }) => (
