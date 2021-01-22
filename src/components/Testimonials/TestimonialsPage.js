@@ -18,6 +18,17 @@ const TestimonialsPage = () => {
           </Media.Body>
         </Media>
         <Testimonial
+          name={"Mathijs Nijland"}
+          title={"Business Designer"}
+          expandTextLink={""}
+          firstSnippet={`It was great working together with Bryan. His eagerness to learn 
+          and his commitment shows that he has a real passion for the work that he does. 
+          What I really liked about our collaboration was that Bryan was always in search 
+          of the best solution and consistently kept the customer’s perspective in mind. 
+          He’s very aware of the process and makes sure that everybody is on board. He has 
+          a proactive approach and takes responsibility, an excellent addition to any team!`}
+        />
+        <Testimonial
           name={"Remi Appels"}
           title={"Solution Architect"}
           expandTextLink={""}
