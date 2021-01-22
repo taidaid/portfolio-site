@@ -3,7 +3,7 @@ import GithubLogo from "../assets/GitHub-Mark-32px.png";
 import LinkedinLogo from "../assets/Linkedin-Mark-32px.png";
 import GmailLogo from "../assets/Gmail-Mark-32px.png";
 
-const Footer = () => {
+const Footer = ({ showCopyright }) => {
   return (
     <footer className="footer text-center  col-12">
       <div className="d-flex justify-content-center ">
@@ -18,11 +18,13 @@ const Footer = () => {
           </a>
         </span>
         <span>
-          <a href="mailto:windsor.bryan@gmail.com?subject=Developer Opportunity">
+          <a href="mailto:bryan@windsor.studio?subject=Developer Opportunity">
             <img className="p-2" src={GmailLogo} alt="Gmail" />
           </a>
         </span>
-        <span className="p-2 text-muted">Bryan Windsor &copy; 2019</span>
+        {showCopyright && (
+          <span className="p-2 text-muted">Bryan Windsor &copy; 2019</span>
+        )}
       </div>
     </footer>
   );
