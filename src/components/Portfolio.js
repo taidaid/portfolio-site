@@ -17,6 +17,7 @@ import GmailLogo from "../assets/Gmail-Mark-32px.png";
 import GoogleDocLogo from "../assets/google-doc-icon.png";
 import TerminalHackerGif from "../assets/terminal_hacker.gif";
 import ProjectBoostGif from "../assets/project-boost.gif";
+import CollegeFootballStats from "../assets/college-football-stats.png";
 
 const Portfolio = () => {
   return (
@@ -60,6 +61,15 @@ const Portfolio = () => {
           </Media.Body>
         </Media>
       </Row>
+      <PortfolioPiece
+        imgSrc={CollegeFootballStats}
+        imgAlt={"College Football Stats"}
+        websiteUrl={"https://college-football-stats-react.herokuapp.com/V"}
+        repoHref={"https://github.com/taidaid/college-football-stats"}
+        title={"College Football Stats"}
+        description={`A small app for viewing NCAA college football stats via any-api.com. This was made using React/TypeScript, React-Router, and Bootstrap.`}
+        repoLogoSrc={GitHubLogo}
+      />
       <PortfolioPiece
         imgSrc={ProjectBoostGif}
         imgAlt={"Project Boost"}
